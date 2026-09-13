@@ -1,0 +1,30 @@
+{
+  "cours": "Cours de recette — Geographie",
+  "description": "Fixture utilisée par les tests automatisés.",
+  "questions": [
+    {
+      "question": "Quelle est la capitale de la France ?",
+      "reponse": "Paris.",
+      "explication": "Paris est la capitale de la France depuis le Moyen Âge.",
+      "theme": "Capitales",
+      "difficulte": "facile",
+      "tags": ["france", "capitale"]
+    },
+    {
+      "question": "Quel est le plus grand désert chaud du monde ?",
+      "reponse": "Le Sahara.",
+      "explication": "Le Sahara s'étend sur une grande partie de l'Afrique du Nord.",
+      "theme": "Déserts",
+      "difficulte": "moyen",
+      "tags": ["desert", "afrique"]
+    },
+    {
+      "question": "Quel océan borde la côte ouest des États-Unis ?",
+      "reponse": "L'océan Pacifique.",
+      "explication": "La côte ouest des États-Unis longe l'océan Pacifique.",
+      "theme": "Océans",
+      "difficulte": "facile",
+      "tags": ["ocean", "etats-unis"]
+    }
+  ]
+}

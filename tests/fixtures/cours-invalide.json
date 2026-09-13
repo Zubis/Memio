@@ -1,0 +1,14 @@
+{
+  "cours": "Cours invalide",
+  "description": "Fixture volontairement invalide : difficulté hors énumération.",
+  "questions": [
+    {
+      "question": "Question sans difficulté valide ?",
+      "reponse": "Peu importe.",
+      "explication": "Ce fichier doit être rejeté par Memio.",
+      "theme": "Test",
+      "difficulte": "moyenne",
+      "tags": ["invalide"]
+    }
+  ]
+}

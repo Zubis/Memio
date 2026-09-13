@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Memio — Réviser ses cours par quiz</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="lien-evitement" href="#contenu-principal">Aller au contenu principal</a>
+
+<header class="entete">
+  <h1>Memio</h1>
+  <div class="entete__actions">
+    <button id="bouton-prompt" type="button" class="bouton-secondaire">Voir / copier le prompt</button>
+    <button id="bouton-parametres" type="button" class="bouton-secondaire">Paramètres</button>
+  </div>
+</header>
+
+<div id="zone-notifications" class="notifications" aria-live="polite" role="status"></div>
+
+<main id="contenu-principal">
+
+  <section id="vue-accueil">
+    <section id="section-chargement" aria-labelledby="titre-chargement">
+      <h2 id="titre-chargement">Charger des cours</h2>
+
+      <p id="info-compatibilite" class="info" hidden>
+        Votre navigateur ne permet pas de sélectionner un répertoire directement.
+        Compatibilité optimale avec les versions récentes de Chrome ou Edge. En attendant,
+        utilisez l'import manuel de fichiers ci-dessous et téléchargez vos cours pour les
+        conserver vous-même.
+      </p>
+
+      <div class="chargement-actions">
+        <button id="bouton-choisir-repertoire" type="button" class="bouton-secondaire" hidden>Choisir un répertoire</button>
+        <button id="bouton-actualiser-repertoire" type="button" class="bouton-secondaire" hidden>Actualiser le répertoire</button>
+      </div>
+
+      <form id="formulaire-import">
+        <label for="champ-import">Importer des fichiers JSON</label>
+        <input id="champ-import" type="file" accept=".json,application/json" multiple>
+      </form>
+
+      <div id="compte-rendu-import" class="compte-rendu" hidden aria-live="polite"></div>
+    </section>
+
+    <section id="section-catalogue" aria-labelledby="titre-catalogue">
+      <h2 id="titre-catalogue">Cours disponibles</h2>
+      <p id="etat-vide-catalogue" class="etat-vide">Aucun cours chargé pour le moment.</p>
+      <ul id="liste-catalogue" class="liste-catalogue" hidden></ul>
+    </section>
+
+    <section id="section-configuration" aria-labelledby="titre-configuration">
+      <h2 id="titre-configuration">Configurer le quiz</h2>
+      <p>Cours sélectionnés : <span id="resume-selection">aucun</span></p>
+      <p>Questions disponibles : <span id="resume-stock">0</span></p>
+
+      <div class="champ">
+        <label for="champ-quantite">Nombre de questions souhaité</label>
+        <input id="champ-quantite" type="number" min="1" step="1" value="10">
+        <p id="erreur-quantite" class="erreur" hidden></p>
+      </div>
+
+      <p id="avertissement-ajustement" class="info" hidden></p>
+      <p>Auto-évaluation : <span id="resume-auto-evaluation">désactivée</span> (modifiable dans les paramètres)</p>
+
+      <button id="bouton-lancer-quiz" type="button" class="bouton-principal" disabled>Lancer le quiz</button>
+    </section>
+  </section>
+
+  <section id="vue-quiz" hidden aria-labelledby="titre-quiz">
+    <h2 id="titre-quiz">Quiz en cours</h2>
+    <p id="progression-quiz"></p>
+    <nav id="navigation-numeros" class="navigation-numeros" aria-label="Accès direct aux questions"></nav>
+
+    <article id="carte-question" class="carte-flip">
+      <div class="carte-flip__interieur">
+        <div role="button" tabindex="0" id="carte-recto" class="carte-flip__face carte-flip__recto" aria-label="Afficher la réponse">
+          <p class="cours-origine" id="cours-origine-question"></p>
+          <h3 id="texte-question"></h3>
+          <p class="carte-flip__indice">Cliquez sur la carte (ou appuyez sur Entrée/Espace) pour afficher la réponse</p>
+        </div>
+        <div class="carte-flip__face carte-flip__face--verso" id="carte-verso" aria-hidden="true">
+          <p class="cours-origine" id="cours-origine-question-verso"></p>
+          <h3 id="texte-question-verso"></h3>
+          <p><strong>Réponse :</strong> <span id="texte-reponse"></span></p>
+          <p><strong>Explication :</strong> <span id="texte-explication"></span></p>
+          <p class="metadonnees">
+            Thème : <span id="texte-theme"></span> —
+            Difficulté : <span id="texte-difficulte"></span> —
+            Tags : <span id="texte-tags"></span>
+          </p>
+          <div id="zone-evaluation" hidden>
+            <button id="bouton-correct" type="button" class="bouton-succes">J'ai répondu correctement</button>
+            <button id="bouton-incorrect" type="button" class="bouton-danger">Je me suis trompé</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div class="quiz-navigation">
+      <button id="bouton-precedent" type="button" class="bouton-secondaire">Précédent</button>
+      <button id="bouton-passer" type="button" class="bouton-secondaire">Passer</button>
+      <button id="bouton-suivant" type="button" class="bouton-principal">Suivant</button>
+    </div>
+
+    <div class="quiz-fin">
+      <button id="bouton-terminer" type="button" class="bouton-principal">Terminer le quiz</button>
+      <button id="bouton-quitter" type="button" class="bouton-secondaire">Quitter le quiz</button>
+    </div>
+  </section>
+
+  <section id="vue-bilan" hidden aria-labelledby="titre-bilan">
+    <h2 id="titre-bilan">Bilan du quiz</h2>
+    <div id="resume-bilan"></div>
+    <ol id="liste-bilan" class="liste-bilan"></ol>
+    <button id="bouton-retour-accueil" type="button" class="bouton-principal">Retour aux cours</button>
+  </section>
+
+</main>
+
+<dialog id="modale-prompt" aria-labelledby="titre-modale-prompt">
+  <h2 id="titre-modale-prompt">Prompt de génération</h2>
+  <p>
+    Copiez ce texte, complétez les emplacements indiqués entre crochets, soumettez-le à une IA
+    générative externe de votre choix avec le contenu de votre cours, enregistrez sa réponse dans
+    un fichier <code>.json</code>, puis importez ce fichier dans Memio. Memio n'envoie jamais votre
+    cours à un service externe : seule la génération de la réponse ci-dessous est réalisée en
+    dehors de l'application. La validation du fichier importé ne garantit pas l'exactitude
+    pédagogique du contenu généré : relisez toujours les réponses.
+  </p>
+  <textarea id="texte-prompt" readonly rows="18"></textarea>
+  <div class="modale-actions">
+    <button id="bouton-copier-prompt" type="button" class="bouton-principal">Copier le prompt</button>
+    <button id="bouton-fermer-prompt" type="button" class="bouton-secondaire">Fermer</button>
+  </div>
+</dialog>
+
+<dialog id="modale-parametres" aria-labelledby="titre-modale-parametres">
+  <h2 id="titre-modale-parametres">Paramètres</h2>
+  <div class="champ">
+    <label for="champ-parametre-quantite">Nombre de questions par défaut</label>
+    <input id="champ-parametre-quantite" type="number" min="1" step="1">
+    <p id="erreur-parametre-quantite" class="erreur" hidden></p>
+  </div>
+  <div class="champ champ-case">
+    <input id="champ-parametre-auto-evaluation" type="checkbox">
+    <label for="champ-parametre-auto-evaluation">Activer l'auto-évaluation par défaut</label>
+  </div>
+  <p id="avertissement-parametres" class="info" hidden></p>
+  <div class="modale-actions">
+    <button id="bouton-enregistrer-parametres" type="button" class="bouton-principal">Enregistrer</button>
+    <button id="bouton-annuler-parametres" type="button" class="bouton-secondaire">Annuler</button>
+  </div>
+</dialog>
+
+<dialog id="modale-confirmation" aria-labelledby="titre-modale-confirmation">
+  <h2 id="titre-modale-confirmation">Confirmation</h2>
+  <p id="texte-modale-confirmation"></p>
+  <div class="modale-actions">
+    <button id="bouton-confirmer" type="button" class="bouton-principal"></button>
+    <button id="bouton-annuler-confirmation" type="button" class="bouton-secondaire">Annuler</button>
+  </div>
+</dialog>
+
+<script src="assets/js/domain/course.js"></script>
+<script src="assets/js/domain/catalog.js"></script>
+<script src="assets/js/domain/settings.js"></script>
+<script src="assets/js/domain/quiz.js"></script>
+<script src="assets/js/services/preferences.js"></script>
+<script src="assets/js/services/files.js"></script>
+<script src="assets/js/content/prompt.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

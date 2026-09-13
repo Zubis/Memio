@@ -1,0 +1,16 @@
+{
+  "name": "memio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Memio — application statique de révision par quiz, sans backend applicatif.",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test \"tests/unit/**/*.test.js\"",
+    "test:e2e": "playwright test",
+    "test:e2e:install": "playwright install --with-deps chromium firefox webkit",
+    "serve": "node tests/helpers/static-server.cjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0"
+  }
+}

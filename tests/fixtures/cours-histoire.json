@@ -1,0 +1,22 @@
+{
+  "cours": "Cours de recette — Histoire",
+  "description": "Deuxième fixture pour tester la sélection multi-cours.",
+  "questions": [
+    {
+      "question": "En quelle année a eu lieu la Révolution française ?",
+      "reponse": "1789.",
+      "explication": "La prise de la Bastille survient le 14 juillet 1789.",
+      "theme": "Révolutions",
+      "difficulte": "facile",
+      "tags": ["france", "revolution"]
+    },
+    {
+      "question": "Quel traité met fin à la Première Guerre mondiale ?",
+      "reponse": "Le traité de Versailles.",
+      "explication": "Signé en 1919, il impose de lourdes conditions à l'Allemagne.",
+      "theme": "Guerres mondiales",
+      "difficulte": "moyen",
+      "tags": ["guerre", "traite"]
+    }
+  ]
+}
