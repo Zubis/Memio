@@ -1,7 +1,6 @@
 /**
  * Memio — contenu : prompt de génération externe (voir doc/specifications-fonct/02-format-et-generation.md, IA-01 à 04).
- * Texte embarqué, sans requête réseau. Comporte des emplacements à compléter par l'utilisateur
- * dans son outil d'IA externe : [COURS À RÉVISER] et [NOMBRE DE QUESTIONS SOUHAITÉ].
+ * Texte embarqué, sans requête réseau.
  */
 (function (global) {
   'use strict';
@@ -13,10 +12,8 @@
     "Tu es un assistant pédagogique. À partir du cours fourni ci-dessous, génère un jeu de",
     "questions/réponses de révision en français, destiné à un·e étudiant·e.",
     "",
-    "Cours source :",
-    "[COURS À RÉVISER]",
-    "",
-    "Nombre de questions à générer : [NOMBRE DE QUESTIONS SOUHAITÉ]",
+    "Le cours source ce trouve en pièce jointe.",
+    "Nombre de questions à générer : En fonction de la longueur et de la complexité du cours.",
     "",
     "Consignes :",
     "1. Fonde chaque question et réponse uniquement sur le contenu du cours fourni ci-dessus.",
