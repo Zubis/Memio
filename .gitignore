@@ -2,6 +2,3 @@ node_modules/
 test-results/
 playwright-report/
 _site/
-
-# Cours personnels : contenu local de l'utilisateur, jamais versionné ni publié.
-cours/

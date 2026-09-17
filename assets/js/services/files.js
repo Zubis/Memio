@@ -17,6 +17,38 @@
     return /\.json$/i.test(nomFichier);
   }
 
+  function creerRejet(nomFichier, message) {
+    return { nomFichier: nomFichier, erreurs: [{ chemin: '', message: message }] };
+  }
+
+  function extraireListeManifeste(manifeste) {
+    if (Array.isArray(manifeste)) {
+      return manifeste;
+    }
+    if (manifeste && Array.isArray(manifeste.cours)) {
+      return manifeste.cours;
+    }
+    throw new Error('Le manifeste doit être un tableau ou contenir une propriété "cours" de type tableau.');
+  }
+
+  function normaliserEntreeManifeste(entree) {
+    var fichier = typeof entree === 'string' ? entree : entree && entree.fichier;
+    if (typeof fichier !== 'string' || fichier.trim() === '') {
+      return { valide: false, nomFichier: 'entrée du manifeste', message: 'Entrée de manifeste invalide.' };
+    }
+    fichier = fichier.trim();
+    if (/^[a-z][a-z0-9+.-]*:/i.test(fichier) || fichier.charAt(0) === '/' || fichier.indexOf('\\') !== -1) {
+      return { valide: false, nomFichier: fichier, message: 'Le chemin doit être un nom de fichier relatif dans le dossier cours.' };
+    }
+    if (fichier.indexOf('/') !== -1 || fichier.split('/').indexOf('..') !== -1 || fichier === '.' || fichier === '..') {
+      return { valide: false, nomFichier: fichier, message: 'Le manifeste ne doit référencer que des fichiers à la racine du dossier cours.' };
+    }
+    if (!estFichierJson(fichier)) {
+      return { valide: false, nomFichier: fichier, message: 'Seuls les fichiers .json peuvent être chargés.' };
+    }
+    return { valide: true, nomFichier: fichier };
+  }
+
   /**
    * Lit le texte d'un objet File (ou compatible .text()).
    */
@@ -69,6 +101,62 @@
       });
       return { acceptes: acceptes, rejetes: rejetes };
     });
+  }
+
+  /**
+   * Charge les cours embarqués déclarés dans un manifeste statique `cours/index.json`.
+   * Retourne { acceptes: [{nomFichier, cours}], rejetes: [{nomFichier, erreurs}] }.
+   */
+  async function chargerCoursEmbarques(urlManifeste) {
+    var course = Memio.domain.course;
+    var acceptes = [];
+    var rejetes = [];
+    if (typeof global.fetch !== 'function') {
+      return { acceptes: acceptes, rejetes: [creerRejet(urlManifeste, 'Chargement HTTP indisponible dans ce navigateur.')] };
+    }
+
+    var reponseManifeste = await global.fetch(urlManifeste, { cache: 'no-store' });
+    if (reponseManifeste.status === 404) {
+      return { acceptes: acceptes, rejetes: rejetes };
+    }
+    if (!reponseManifeste.ok) {
+      throw new Error('Manifeste inaccessible (' + reponseManifeste.status + ').');
+    }
+
+    var manifeste;
+    try {
+      manifeste = JSON.parse(await reponseManifeste.text());
+    } catch (erreurParseManifeste) {
+      throw new Error('Manifeste JSON illisible : ' + erreurParseManifeste.message);
+    }
+
+    var liste = extraireListeManifeste(manifeste);
+    await Promise.all(liste.map(async function (entree) {
+      var normalisation = normaliserEntreeManifeste(entree);
+      if (!normalisation.valide) {
+        rejetes.push(creerRejet(normalisation.nomFichier, normalisation.message));
+        return;
+      }
+
+      var nomFichier = normalisation.nomFichier;
+      try {
+        var reponseCours = await global.fetch('cours/' + encodeURIComponent(nomFichier), { cache: 'no-store' });
+        if (!reponseCours.ok) {
+          rejetes.push(creerRejet(nomFichier, 'Fichier inaccessible (' + reponseCours.status + ').'));
+          return;
+        }
+        var resultat = course.analyserEtValiderCours(await reponseCours.text(), nomFichier);
+        if (resultat.valide) {
+          acceptes.push({ nomFichier: nomFichier, cours: resultat.cours });
+        } else {
+          rejetes.push({ nomFichier: nomFichier, erreurs: resultat.erreurs });
+        }
+      } catch (erreurLecture) {
+        rejetes.push(creerRejet(nomFichier, 'Lecture impossible : ' + erreurLecture.message));
+      }
+    }));
+
+    return { acceptes: acceptes, rejetes: rejetes };
   }
 
   /**
@@ -173,6 +261,7 @@
   Memio.services.files = {
     apiRepertoireDisponible: apiRepertoireDisponible,
     estFichierJson: estFichierJson,
+    chargerCoursEmbarques: chargerCoursEmbarques,
     validerFichiersImportes: validerFichiersImportes,
     choisirRepertoire: choisirRepertoire,
     listerCoursDuRepertoire: listerCoursDuRepertoire,

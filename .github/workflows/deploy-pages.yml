@@ -27,9 +27,7 @@ jobs:
           cp index.html _site/
           cp .nojekyll _site/
           cp -r assets _site/
-          # Le dossier cours/ n'est pas publié : il est réservé aux fichiers
-          # locaux importés/sélectionnés par chaque utilisateur au runtime,
-          # jamais servis par l'application elle-même.
+          cp -r cours _site/
 
       - name: Publication de l'artefact Pages
         uses: actions/upload-pages-artifact@v3

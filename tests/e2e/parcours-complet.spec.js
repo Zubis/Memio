@@ -14,6 +14,7 @@ const FICHIER_INVALIDE = path.join(__dirname, '..', 'fixtures', 'cours-invalide.
  */
 test('parcours complet : import, sélection multi-cours, quiz avec auto-évaluation, bilan', async ({ page }) => {
   await page.goto('/');
+  await expect(page.locator('#liste-catalogue li')).toHaveCount(1);
 
   // Activation de l'auto-évaluation via les paramètres (PAR-02).
   await page.getByRole('button', { name: 'Paramètres' }).click();
@@ -25,11 +26,11 @@ test('parcours complet : import, sélection multi-cours, quiz avec auto-évaluat
   await page.locator('#champ-import').setInputFiles([FICHIER_GEOGRAPHIE, FICHIER_HISTOIRE, FICHIER_INVALIDE]);
   await expect(page.locator('#compte-rendu-import')).toContainText('cours-geographie.json');
   await expect(page.locator('#compte-rendu-import')).toContainText('cours-invalide.json');
-  await expect(page.locator('#liste-catalogue li')).toHaveCount(2);
+  await expect(page.locator('#liste-catalogue li')).toHaveCount(3);
 
   // Sélection des deux cours valides (CFG-01) : stock = 3 + 2 = 5 questions.
-  await page.locator('#liste-catalogue li input[type="checkbox"]').nth(0).check();
-  await page.locator('#liste-catalogue li input[type="checkbox"]').nth(1).check();
+  await page.locator('#liste-catalogue li').filter({ hasText: 'cours-geographie.json' }).locator('input[type="checkbox"]').check();
+  await page.locator('#liste-catalogue li').filter({ hasText: 'cours-histoire.json' }).locator('input[type="checkbox"]').check();
   await expect(page.locator('#resume-stock')).toHaveText('5');
 
   // Demande supérieure au stock : ajustement annoncé avant lancement (CFG-03).
@@ -67,14 +68,28 @@ test('parcours complet : import, sélection multi-cours, quiz avec auto-évaluat
   // Retour aux cours : catalogue conservé, sélection réinitialisée (BIL-03/BIL-04).
   await page.getByRole('button', { name: 'Retour aux cours' }).click();
   await expect(page.locator('#vue-accueil')).toBeVisible();
-  await expect(page.locator('#liste-catalogue li')).toHaveCount(2);
+  await expect(page.locator('#liste-catalogue li')).toHaveCount(3);
   await expect(page.locator('#resume-selection')).toHaveText('aucun');
+});
+
+test('un cours embarqué est disponible au démarrage et permet de lancer un quiz', async ({ page }) => {
+  await page.goto('/');
+
+  await expect(page.locator('#liste-catalogue li')).toHaveCount(1);
+  await expect(page.locator('#liste-catalogue')).toContainText('Préventions-des-risques-infectieux.json');
+
+  await page.locator('#liste-catalogue li').filter({ hasText: 'Préventions-des-risques-infectieux.json' }).locator('input[type="checkbox"]').check();
+  await expect(page.locator('#resume-stock')).not.toHaveText('0');
+  await page.locator('#champ-quantite').fill('1');
+  await page.getByRole('button', { name: 'Lancer le quiz' }).click();
+  await expect(page.locator('#vue-quiz')).toBeVisible();
+  await expect(page.locator('#progression-quiz')).toContainText('Question 1 sur 1');
 });
 
 test('sans auto-évaluation : aucun contrôle d’évaluation ni score (AC-EVA-01)', async ({ page }) => {
   await page.goto('/');
   await page.locator('#champ-import').setInputFiles([FICHIER_GEOGRAPHIE]);
-  await page.locator('#liste-catalogue li input[type="checkbox"]').nth(0).check();
+  await page.locator('#liste-catalogue li').filter({ hasText: 'cours-geographie.json' }).locator('input[type="checkbox"]').check();
   await page.locator('#champ-quantite').fill('2');
   await page.getByRole('button', { name: 'Lancer le quiz' }).click();
 
@@ -88,11 +103,11 @@ test('sans auto-évaluation : aucun contrôle d’évaluation ni score (AC-EVA-0
   await expect(page.locator('#resume-bilan')).not.toContainText('Score');
 });
 
-test('la modale du prompt est accessible sans cours chargé (IA-01)', async ({ page }) => {
+test('la modale du prompt est accessible depuis l’accueil (IA-01)', async ({ page }) => {
   await page.goto('/');
   await page.getByRole('button', { name: 'Voir / copier le prompt' }).click();
   await expect(page.locator('#modale-prompt')).toBeVisible();
-  await expect(page.locator('#texte-prompt')).toHaveValue(/COURS À RÉVISER/);
+  await expect(page.locator('#texte-prompt')).toHaveValue(/Format JSON attendu/);
   await page.getByRole('button', { name: 'Fermer' }).click();
   await expect(page.locator('#modale-prompt')).toBeHidden();
 });
@@ -120,7 +135,7 @@ test('AC-GEN-04 : contenu HTML importé est affiché comme texte, jamais exécut
     document.getElementById('champ-import').files = conteneur.files;
     document.getElementById('champ-import').dispatchEvent(new Event('change', { bubbles: true }));
   });
-  await expect(page.locator('#liste-catalogue li')).toHaveCount(1);
+  await expect(page.locator('#liste-catalogue li').filter({ hasText: 'xss.json' })).toHaveCount(1);
   const xssDeclenche = await page.evaluate(() => window.__xss === true);
   expect(xssDeclenche).toBe(false);
 });
@@ -128,7 +143,7 @@ test('AC-GEN-04 : contenu HTML importé est affiché comme texte, jamais exécut
 test('la carte question se retourne au clavier (Entrée/Espace) et devient non interactive une fois révélée', async ({ page }) => {
   await page.goto('/');
   await page.locator('#champ-import').setInputFiles([FICHIER_GEOGRAPHIE]);
-  await page.locator('#liste-catalogue li input[type="checkbox"]').nth(0).check();
+  await page.locator('#liste-catalogue li').filter({ hasText: 'cours-geographie.json' }).locator('input[type="checkbox"]').check();
   await page.locator('#champ-quantite').fill('1');
   await page.getByRole('button', { name: 'Lancer le quiz' }).click();
 
@@ -150,7 +165,7 @@ test('le bilan colore les questions selon leur évaluation, uniquement si l’au
   await page.getByRole('button', { name: 'Enregistrer' }).click();
 
   await page.locator('#champ-import').setInputFiles([FICHIER_GEOGRAPHIE]);
-  await page.locator('#liste-catalogue li input[type="checkbox"]').nth(0).check();
+  await page.locator('#liste-catalogue li').filter({ hasText: 'cours-geographie.json' }).locator('input[type="checkbox"]').check();
   await page.locator('#champ-quantite').fill('2');
   await page.getByRole('button', { name: 'Lancer le quiz' }).click();
 

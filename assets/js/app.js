@@ -1,7 +1,7 @@
 /**
  * Memio — orchestration de l'application (vues, événements, état en mémoire).
  * S'appuie uniquement sur Memio.domain.* et Memio.services.* déjà chargés.
- * Aucune donnée n'est transmise à un service externe ; aucune requête réseau n'est émise ici.
+ * Aucune donnée n'est transmise à un service externe.
  */
 (function () {
   'use strict';
@@ -626,6 +626,26 @@
     conteneur.hidden = false;
   }
 
+  async function chargerCoursEmbarquesAuDemarrage() {
+    if (window.location.protocol !== 'http:' && window.location.protocol !== 'https:') {
+      return;
+    }
+    try {
+      var resultat = await serviceFichiers.chargerCoursEmbarques('cours/index.json');
+      if (resultat.acceptes.length > 0) {
+        var entrees = resultat.acceptes.filter(function (a) {
+          return !domaineCatalogue.contientNomFichier(etat.catalogue, a.nomFichier);
+        }).map(function (a) {
+          return domaineCatalogue.creerEntree(a.nomFichier, a.cours, 'embarque', true);
+        });
+        etat.catalogue = domaineCatalogue.trierCatalogue(etat.catalogue.concat(entrees));
+      }
+      afficherCompteRenduImport([], resultat.rejetes, []);
+    } catch (erreur) {
+      notifier('Chargement des cours embarqués impossible : ' + erreur.message, 'info');
+    }
+  }
+
   // ---------------------------------------------------------------------
   // Répertoire (COU-02 à COU-07, COU-09, COU-10)
   // ---------------------------------------------------------------------
@@ -689,10 +709,9 @@
   // ---------------------------------------------------------------------
   // Initialisation
   // ---------------------------------------------------------------------
-  function initialiser() {
+  async function initialiser() {
     chargerPreferencesInitiales();
     rendreCompatibilite();
-    rendreCatalogue();
 
     el['champ-quantite'].value = String(etat.preferences.nombreQuestionsParDefaut);
     el['champ-quantite'].addEventListener('input', rafraichirConfiguration);
@@ -748,6 +767,10 @@
     });
 
     afficherVue('accueil');
+    rendreCatalogue();
+
+    await chargerCoursEmbarquesAuDemarrage();
+    rendreCatalogue();
   }
 
   if (document.readyState === 'loading') {

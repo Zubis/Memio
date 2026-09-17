@@ -1,0 +1,646 @@
+{
+    "cours": "Prévenir le risque infectieux lié aux dispositifs médicaux en site interventionnel et aux endoscopes souples",
+    "description": "Cours consacré à la classification, au traitement, à la désinfection, à la stérilisation, à la traçabilité, au stockage et au contrôle microbiologique des dispositifs médicaux réutilisables et des endoscopes souples.",
+    "questions": [
+        {
+            "question": "Qu'est-ce qu'un dispositif médical ?",
+            "reponse": "Un dispositif médical est un instrument, appareil, équipement, logiciel, implant, réactif, matière ou autre article destiné par le fabricant à une ou plusieurs fins médicales précises chez l'être humain, dont l'action principale n'est pas obtenue par des moyens pharmacologiques, immunologiques ou métaboliques.",
+            "explication": "Un dispositif médical peut notamment servir au diagnostic, à la prévention, au traitement d'une maladie ou d'une blessure, à la modification d'une structure anatomique ou à l'examen in vitro d'échantillons humains.",
+            "theme": "Définition des dispositifs médicaux",
+            "difficulte": "facile",
+            "tags": [
+                "dispositif médical",
+                "définition"
+            ]
+        },
+        {
+            "question": "Quels critères sont utilisés pour classer les dispositifs médicaux en quatre catégories ?",
+            "reponse": "La classification dépend de la durée d'utilisation, du caractère invasif ou implantable, de la réalisation d'un acte chirurgical, du caractère actif ou non et de l'introduction éventuelle dans un site critique.",
+            "explication": "Les sites critiques mentionnés sont notamment le système circulatoire central et le système nerveux central.",
+            "theme": "Classification des dispositifs médicaux",
+            "difficulte": "moyen",
+            "tags": [
+                "classification",
+                "criticité",
+                "dispositif médical"
+            ]
+        },
+        {
+            "question": "Quel organisme surveille le marché des dispositifs médicaux ?",
+            "reponse": "L'ANSM surveille le marché des dispositifs médicaux.",
+            "explication": "Cette surveillance s'inscrit dans le suivi de la conformité et de la sécurité des dispositifs médicaux.",
+            "theme": "Réglementation des dispositifs médicaux",
+            "difficulte": "facile",
+            "tags": [
+                "ANSM",
+                "surveillance"
+            ]
+        },
+        {
+            "question": "Que signifie le marquage CE d'un dispositif médical ?",
+            "reponse": "Le marquage CE signifie que le dispositif médical répond à la législation européenne.",
+            "explication": "Pour les dispositifs de classe I, il repose sur une auto-certification du fabricant. Pour les autres classes, il est obtenu par l'intermédiaire d'un organisme notifié.",
+            "theme": "Réglementation des dispositifs médicaux",
+            "difficulte": "facile",
+            "tags": [
+                "marquage CE",
+                "conformité",
+                "réglementation"
+            ]
+        },
+        {
+            "question": "Quel est le rôle du système d'identification unique des dispositifs médicaux ?",
+            "reponse": "Il renforce l'identification et la traçabilité des dispositifs médicaux.",
+            "explication": "L'identification unique comprend un identifiant du dispositif ou du modèle et un identifiant de production correspondant à l'unité de production.",
+            "theme": "Identification et traçabilité",
+            "difficulte": "moyen",
+            "tags": [
+                "IUD",
+                "identification",
+                "traçabilité"
+            ]
+        },
+        {
+            "question": "Quelle différence existe-t-il entre un DMU et un DMR ?",
+            "reponse": "Un DMU est prévu pour une seule utilisation et ne doit pas être retraité, tandis qu'un DMR est conçu par son fabricant pour être retraité et utilisé plusieurs fois.",
+            "explication": "Pour un DMR, le nombre de traitements autorisés peut être défini par le fabricant ou être illimité.",
+            "theme": "Types de dispositifs médicaux",
+            "difficulte": "facile",
+            "tags": [
+                "DMU",
+                "DMR",
+                "réutilisation"
+            ]
+        },
+        {
+            "question": "Quels sont les principaux types de dispositifs médicaux réutilisables présentés dans le cours ?",
+            "reponse": "Les DMR peuvent être non immergeables ou immergeables. Les DMR immergeables peuvent être thermosensibles ou thermorésistants.",
+            "explication": "Les thermosensibles ne sont pas stérilisés à l'autoclave et font l'objet d'une désinfection à froid. Les thermorésistants peuvent être stérilisés.",
+            "theme": "Types de dispositifs médicaux réutilisables",
+            "difficulte": "facile",
+            "tags": [
+                "DMR",
+                "immergeable",
+                "thermosensible",
+                "thermorésistant"
+            ]
+        },
+        {
+            "question": "Quels paramètres d'autoclave sont indiqués dans le cours ?",
+            "reponse": "L'autoclave fonctionne à 134 °C pendant 18 minutes, avec des variations de pression.",
+            "explication": "Ce procédé concerne les dispositifs médicaux réutilisables thermorésistants.",
+            "theme": "Stérilisation",
+            "difficulte": "facile",
+            "tags": [
+                "autoclave",
+                "température",
+                "stérilisation"
+            ]
+        },
+        {
+            "question": "Pourquoi le matériel partagé ou mobile doit-il être nettoyé ou désinfecté après chaque utilisation ?",
+            "reponse": "Sans nettoyage ou désinfection après chaque utilisation, les patients et les soignants risquent d'être exposés à la flore microbienne par transmission croisée.",
+            "explication": "La chaleur et l'humidité peuvent favoriser une longue survie de certains micro-organismes sur le matériel.",
+            "theme": "Prévention du risque infectieux",
+            "difficulte": "facile",
+            "tags": [
+                "transmission croisée",
+                "nettoyage",
+                "désinfection"
+            ]
+        },
+        {
+            "question": "Quelle différence existe-t-il entre transmission directe et transmission croisée ?",
+            "reponse": "La transmission directe se fait du toucher au toucher, tandis que la transmission croisée passe par une interface telle qu'un dispositif médical, une personne ou une surface.",
+            "explication": "Un matériel contaminé peut donc servir d'intermédiaire dans la transmission de micro-organismes.",
+            "theme": "Modes de transmission",
+            "difficulte": "facile",
+            "tags": [
+                "transmission directe",
+                "transmission croisée"
+            ]
+        },
+        {
+            "question": "Quels mécanismes peuvent provoquer une contamination croisée liée à un dispositif médical ?",
+            "reponse": "La contamination peut résulter d'un dispositif contaminant l'environnement, d'un nettoyage insuffisant, du non-respect des procédures de désinfection ou de stérilisation, ou d'une recontamination après désinfection.",
+            "explication": "La maîtrise du risque doit porter sur toutes les étapes, depuis l'utilisation jusqu'au stockage ou à la réutilisation.",
+            "theme": "Contamination croisée",
+            "difficulte": "moyen",
+            "tags": [
+                "contamination",
+                "procédure",
+                "recontamination"
+            ]
+        },
+        {
+            "question": "Quelles sont les cinq catégories d'agents responsables de la contamination des DMR citées dans le cours ?",
+            "reponse": "Les prions, les endotoxines, les virus, les parasites microscopiques et les bactéries sous forme végétative ou sporulée.",
+            "explication": "Ces agents peuvent être présents dans les liquides biologiques ou les tissus entrant en contact avec le dispositif médical.",
+            "theme": "Micro-organismes et agents infectieux",
+            "difficulte": "moyen",
+            "tags": [
+                "prion",
+                "endotoxine",
+                "virus",
+                "bactérie"
+            ]
+        },
+        {
+            "question": "Pourquoi faut-il empêcher la formation d'un biofilm sur les instruments ?",
+            "reponse": "Le biofilm adhère au dispositif et rend l'élimination des micro-organismes plus difficile.",
+            "explication": "Le cours indique que sa formation commence après la première heure. L'irrigation des instruments creux en fin d'intervention contribue à limiter ce risque.",
+            "theme": "Biofilm",
+            "difficulte": "moyen",
+            "tags": [
+                "biofilm",
+                "irrigation",
+                "micro-organismes"
+            ]
+        },
+        {
+            "question": "Que sont les prions pathogènes ?",
+            "reponse": "Ce sont des formes altérées de protéines naturellement présentes dans les cellules animales.",
+            "explication": "Lorsqu'ils atteignent le cerveau, ils peuvent s'accumuler sous forme de plaques amyloïdes et entraîner une lyse des neurones ainsi qu'une vacuolisation cérébrale.",
+            "theme": "Prions",
+            "difficulte": "moyen",
+            "tags": [
+                "prion",
+                "ATNC",
+                "protéine"
+            ]
+        },
+        {
+            "question": "Selon la classification de Spaulding, quel traitement correspond à un DMR non critique ?",
+            "reponse": "Un DMR non critique, en contact avec une peau saine ou sans contact avec le patient, présente un risque infectieux bas et nécessite une désinfection de bas niveau.",
+            "explication": "La classification de Spaulding associe le tissu en contact, la criticité du dispositif, le niveau de risque et le niveau de traitement requis.",
+            "theme": "Classification de Spaulding",
+            "difficulte": "facile",
+            "tags": [
+                "Spaulding",
+                "non critique",
+                "bas niveau"
+            ]
+        },
+        {
+            "question": "Selon la classification de Spaulding, quel traitement correspond à un DMR semi-critique ?",
+            "reponse": "Un DMR semi-critique, en contact avec une peau lésée ou une muqueuse, présente un risque médian et nécessite un usage unique, une stérilisation ou, à défaut, une désinfection de niveau intermédiaire.",
+            "explication": "Une sonde d'échographie endovaginale est donnée comme exemple de matériel relevant d'un niveau de risque médian.",
+            "theme": "Classification de Spaulding",
+            "difficulte": "moyen",
+            "tags": [
+                "Spaulding",
+                "semi-critique",
+                "niveau intermédiaire"
+            ]
+        },
+        {
+            "question": "Selon la classification de Spaulding, quel traitement correspond à un DMR critique ?",
+            "reponse": "Un DMR critique, en contact avec le système vasculaire, une cavité ou un tissu stérile, présente un risque élevé et nécessite un usage unique, une stérilisation ou, à défaut, une désinfection de haut niveau.",
+            "explication": "Le cours indique qu'au bloc opératoire, le niveau de risque considéré est élevé.",
+            "theme": "Classification de Spaulding",
+            "difficulte": "moyen",
+            "tags": [
+                "Spaulding",
+                "critique",
+                "stérilisation"
+            ]
+        },
+        {
+            "question": "Quels objectifs microbiologiques correspondent aux trois niveaux de désinfection ?",
+            "reponse": "Le bas niveau est bactéricide. Le niveau intermédiaire est bactéricide, fongicide, virucide et mycobactéricide. Le haut niveau ajoute une action sporicide.",
+            "explication": "L'état stérile correspond à l'absence de micro-organisme et ne doit pas être confondu avec une désinfection de haut niveau.",
+            "theme": "Niveaux de désinfection",
+            "difficulte": "difficile",
+            "tags": [
+                "bactéricide",
+                "virucide",
+                "sporicide",
+                "désinfection"
+            ]
+        },
+        {
+            "question": "Pourquoi la prise en charge d'un DMR doit-elle être réalisée au plus près du soin ?",
+            "reponse": "Pour éviter la dessiccation des liquides biologiques, limiter la formation d'un biofilm et faciliter le nettoyage intérieur.",
+            "explication": "Une prise en charge rapide empêche les salissures de sécher et de devenir plus difficiles à éliminer.",
+            "theme": "Prise en charge des DMR",
+            "difficulte": "facile",
+            "tags": [
+                "dessiccation",
+                "biofilm",
+                "nettoyage"
+            ]
+        },
+        {
+            "question": "Quelles caractéristiques doit présenter un local consacré au traitement des DMR ?",
+            "reponse": "Il doit être dédié au traitement des DMR, organisé selon une marche en avant, correctement ventilé et équipé d'un dispositif de lavage des mains, d'une paillasse humide avec des bacs et un plan d'égouttage, ainsi que d'une prise d'air médical pour le séchage.",
+            "explication": "L'organisation du local doit faciliter l'entretien et limiter les risques de recontamination.",
+            "theme": "Organisation du local de traitement",
+            "difficulte": "moyen",
+            "tags": [
+                "local",
+                "marche en avant",
+                "air médical"
+            ]
+        },
+        {
+            "question": "Quels équipements de protection individuelle sont indiqués pour le traitement des DMR ?",
+            "reponse": "Des gants, des lunettes, un tablier et un masque.",
+            "explication": "Ces équipements protègent le personnel et sa tenue contre les projections de produits et de liquides biologiques.",
+            "theme": "Protection du personnel",
+            "difficulte": "facile",
+            "tags": [
+                "EPI",
+                "précautions standards",
+                "protection"
+            ]
+        },
+        {
+            "question": "Quelles règles principales doivent être respectées lors de la préparation d'un bain détergent-désinfectant ?",
+            "reponse": "Il faut respecter la dilution et le temps de contact, utiliser un bac propre et adapté, employer l'eau recommandée, ajouter la dose correspondant au volume d'eau, fermer le bac et tracer la date et l'heure de préparation.",
+            "explication": "La solution doit être renouvelée toutes les 24 heures ou plus tôt si elle est visiblement souillée.",
+            "theme": "Bain détergent-désinfectant",
+            "difficulte": "moyen",
+            "tags": [
+                "dilution",
+                "temps de contact",
+                "traçabilité"
+            ]
+        },
+        {
+            "question": "Comment la désinfection est-elle définie dans le cours ?",
+            "reponse": "La désinfection est une opération au résultat momentané qui élimine ou tue des micro-organismes et inactive des virus indésirables présents sur des milieux inertes contaminés, selon les objectifs fixés.",
+            "explication": "Son résultat est limité aux micro-organismes et aux virus présents au moment de l'opération. La désinfection d'un dispositif doit donc avoir lieu juste avant son utilisation.",
+            "theme": "Désinfection",
+            "difficulte": "moyen",
+            "tags": [
+                "désinfection",
+                "résultat momentané",
+                "micro-organismes"
+            ]
+        },
+        {
+            "question": "Comment la stérilisation est-elle définie dans le cours ?",
+            "reponse": "La stérilisation est l'ensemble des méthodes et moyens visant à éliminer par destruction tous les micro-organismes vivants, quelle que soit leur nature ou leur forme, sur un objet parfaitement nettoyé.",
+            "explication": "Pour qu'un dispositif soit étiqueté stérile, la probabilité théorique de présence d'un micro-organisme viable doit être inférieure ou égale à 1 pour 1 000 000.",
+            "theme": "Stérilisation",
+            "difficulte": "moyen",
+            "tags": [
+                "stérilisation",
+                "état stérile",
+                "nettoyage"
+            ]
+        },
+        {
+            "question": "Pourquoi une désinfection de haut niveau ne peut-elle pas être assimilée à une stérilisation ?",
+            "reponse": "Parce qu'elle ne procure pas le même niveau de sécurité microbiologique que la stérilisation.",
+            "explication": "La stérilisation vise l'élimination de tous les micro-organismes et l'état stérile est ensuite maintenu par un emballage.",
+            "theme": "Désinfection et stérilisation",
+            "difficulte": "facile",
+            "tags": [
+                "haut niveau",
+                "stérilisation",
+                "sécurité microbiologique"
+            ]
+        },
+        {
+            "question": "Quelles sont les principales étapes du processus de stérilisation d'un DMR ?",
+            "reponse": "Les étapes sont la pré-désinfection, le nettoyage, la recomposition, le conditionnement, la stérilisation et le stockage.",
+            "explication": "La recomposition inclut la vérification fonctionnelle du dispositif. Le conditionnement protège le matériel et permet le maintien de son état stérile.",
+            "theme": "Processus de stérilisation",
+            "difficulte": "moyen",
+            "tags": [
+                "pré-désinfection",
+                "conditionnement",
+                "stockage"
+            ]
+        },
+        {
+            "question": "Quels éléments doivent être vérifiés pour contrôler la validité d'un DMR stérile conditionné ?",
+            "reponse": "Il faut vérifier l'intégrité du conditionnement, l'absence de trous, d'humidité ou de souillures, les témoins de passage adaptés au conditionnement et l'étiquette de traçabilité.",
+            "explication": "Pour un double emballage papier, les deux emballages doivent être intègres. Les indicateurs ayant changé de couleur prouvent seulement un passage dans l'autoclave et non la stérilité du dispositif.",
+            "theme": "Contrôle d'un DMR stérile",
+            "difficulte": "difficile",
+            "tags": [
+                "conditionnement",
+                "intégrité",
+                "traçabilité",
+                "autoclave"
+            ]
+        },
+        {
+            "question": "Comment l'instrumentation doit-elle être organisée avant son évacuation vers la pré-désinfection ?",
+            "reponse": "Les instruments articulés doivent être ouverts, les plus lourds placés au fond du panier et les plus légers ou ceux devant être brossés placés sur le dessus.",
+            "explication": "L'instrumentation doit être évacuée dans le bac de pré-désinfection le plus rapidement possible après l'intervention.",
+            "theme": "Gestion de l'instrumentation",
+            "difficulte": "facile",
+            "tags": [
+                "instruments",
+                "pré-désinfection",
+                "panier"
+            ]
+        },
+        {
+            "question": "Pourquoi le risque lié aux prions doit-il faire l'objet d'une évaluation particulière ?",
+            "reponse": "Les prions, ou agents transmissibles non conventionnels, présentent une grande résistance aux procédés chimiques ou physiques et peuvent être transmis par l'intermédiaire de DMR.",
+            "explication": "En France, le risque lié aux prions doit être évalué pour tout acte invasif. Le niveau de risque est transmis à l'unité de stérilisation afin d'adapter le traitement.",
+            "theme": "Inactivation des prions",
+            "difficulte": "moyen",
+            "tags": [
+                "prion",
+                "ATNC",
+                "évaluation du risque"
+            ]
+        },
+        {
+            "question": "Quels actes sont considérés comme à risque de transmission des prions pour tous les patients ?",
+            "reponse": "La neurochirurgie hors rachis, la chirurgie ophtalmologique touchant la rétine ou le nerf optique, ainsi que la chirurgie ou l'endoscopie ORL touchant la muqueuse olfactive.",
+            "explication": "Ces actes nécessitent une prise en compte spécifique du risque lors du traitement des dispositifs médicaux utilisés.",
+            "theme": "Risque prion",
+            "difficulte": "difficile",
+            "tags": [
+                "neurochirurgie",
+                "ophtalmologie",
+                "ORL",
+                "prion"
+            ]
+        },
+        {
+            "question": "Quels sont les deux types de traitement des endoscopes souples ?",
+            "reponse": "Le traitement manuel et le traitement automatisé.",
+            "explication": "Ces deux traitements comportent des étapes communes mais le traitement automatisé utilise un laveur-désinfecteur d'endoscopes.",
+            "theme": "Traitement des endoscopes",
+            "difficulte": "facile",
+            "tags": [
+                "endoscope",
+                "traitement manuel",
+                "traitement automatisé"
+            ]
+        },
+        {
+            "question": "Où et quand le prétraitement d'un endoscope doit-il être réalisé ?",
+            "reponse": "Il doit être réalisé en salle d'intervention, immédiatement après la fin de l'examen.",
+            "explication": "Il comprend notamment l'essuyage externe et l'aspiration-insufflation de tous les canaux avec de l'eau pour soins standards. L'endoscope doit ensuite être transporté sans délai vers le local de traitement.",
+            "theme": "Prétraitement des endoscopes",
+            "difficulte": "facile",
+            "tags": [
+                "prétraitement",
+                "endoscope",
+                "salle d'intervention"
+            ]
+        },
+        {
+            "question": "Que faut-il faire si le test d'étanchéité d'un endoscope n'est pas valide ?",
+            "reponse": "L'endoscope doit être envoyé en réparation sans poursuivre les autres étapes du nettoyage.",
+            "explication": "La poursuite du nettoyage risquerait d'endommager les mécanismes internes de l'endoscope.",
+            "theme": "Test d'étanchéité",
+            "difficulte": "facile",
+            "tags": [
+                "étanchéité",
+                "réparation",
+                "endoscope"
+            ]
+        },
+        {
+            "question": "Quelles opérations sont réalisées pendant le premier nettoyage manuel d'un endoscope ?",
+            "reponse": "Il faut nettoyer la gaine, démonter et nettoyer les éléments amovibles, irriguer les canaux, écouvillonner les canaux et brosser l'extrémité, les anfractuosités et les cages à pistons.",
+            "explication": "Plusieurs passages d'écouvillon peuvent être nécessaires et la brosse doit être nettoyée entre les passages.",
+            "theme": "Traitement manuel des endoscopes",
+            "difficulte": "moyen",
+            "tags": [
+                "écouvillonnage",
+                "irrigation",
+                "nettoyage manuel"
+            ]
+        },
+        {
+            "question": "Quel est l'objectif du premier rinçage lors du traitement manuel d'un endoscope ?",
+            "reponse": "Il permet d'éliminer les salissures et les résidus de détergent.",
+            "explication": "L'endoscope est rincé et irrigué avec de l'eau pour soins standards.",
+            "theme": "Traitement manuel des endoscopes",
+            "difficulte": "facile",
+            "tags": [
+                "rinçage",
+                "détergent",
+                "salissures"
+            ]
+        },
+        {
+            "question": "Pourquoi faut-il purger l'eau des canaux après le rinçage intermédiaire d'un endoscope ?",
+            "reponse": "Pour éviter la dilution ultérieure du désinfectant, voire son inactivation.",
+            "explication": "Le rinçage intermédiaire doit être abondant, puis l'eau présente dans les canaux doit être éliminée par une purge à l'air.",
+            "theme": "Traitement manuel des endoscopes",
+            "difficulte": "moyen",
+            "tags": [
+                "purge",
+                "désinfectant",
+                "canaux"
+            ]
+        },
+        {
+            "question": "De quoi dépend le temps de trempage d'un endoscope dans la solution désinfectante ?",
+            "reponse": "Il dépend des spécifications du fabricant et du niveau de désinfection requis, intermédiaire ou haut niveau.",
+            "explication": "Pendant cette étape, l'endoscope doit être complètement immergé et tous ses canaux doivent être irrigués.",
+            "theme": "Désinfection des endoscopes",
+            "difficulte": "moyen",
+            "tags": [
+                "temps de contact",
+                "immersion",
+                "désinfection"
+            ]
+        },
+        {
+            "question": "Quel est l'objectif du rinçage terminal d'un endoscope ?",
+            "reponse": "Il vise à réduire le risque toxique en éliminant toute trace de désinfectant.",
+            "explication": "La qualité de l'eau utilisée pour le rinçage terminal dépend du niveau de désinfection effectué.",
+            "theme": "Rinçage terminal",
+            "difficulte": "facile",
+            "tags": [
+                "rinçage terminal",
+                "risque toxique",
+                "désinfectant"
+            ]
+        },
+        {
+            "question": "Comment doit être séché un endoscope qui n'est pas réutilisé immédiatement ?",
+            "reponse": "Il doit être séché à l'air médical sur une surface sèche préalablement nettoyée.",
+            "explication": "L'extrémité du dispositif de séchage ne doit pas toucher l'endoscope afin d'éviter une recontamination.",
+            "theme": "Séchage des endoscopes",
+            "difficulte": "facile",
+            "tags": [
+                "séchage",
+                "air médical",
+                "recontamination"
+            ]
+        },
+        {
+            "question": "Quelle règle s'applique à la traçabilité des endoscopes ?",
+            "reponse": "Une feuille de traçabilité doit être établie pour chaque patient et pour chaque endoscope.",
+            "explication": "La traçabilité permet d'associer précisément un dispositif, son traitement et le patient concerné.",
+            "theme": "Traçabilité des endoscopes",
+            "difficulte": "facile",
+            "tags": [
+                "traçabilité",
+                "patient",
+                "endoscope"
+            ]
+        },
+        {
+            "question": "Quel est le rôle d'un laveur-désinfecteur d'endoscopes ?",
+            "reponse": "Il lave et désinfecte les surfaces externes et internes des endoscopes souples thermosensibles semi-critiques.",
+            "explication": "Avant le programme, un cycle d'auto-désinfection des circuits hydrauliques doit être réalisé. À la fin, le laveur-désinfecteur doit être nettoyé selon les recommandations du fabricant.",
+            "theme": "Traitement automatisé des endoscopes",
+            "difficulte": "moyen",
+            "tags": [
+                "LDE",
+                "automatisation",
+                "désinfection"
+            ]
+        },
+        {
+            "question": "Quelles sont les étapes principales du traitement automatisé d'un endoscope ?",
+            "reponse": "Un nettoyage préalable, un rinçage préliminaire, le traitement en laveur-désinfecteur et un séchage complémentaire avant stockage.",
+            "explication": "Le traitement en machine comprend le nettoyage, le rinçage intermédiaire, la désinfection de niveau intermédiaire, le rinçage terminal et un séchage par soufflage.",
+            "theme": "Traitement automatisé des endoscopes",
+            "difficulte": "moyen",
+            "tags": [
+                "LDE",
+                "rinçage",
+                "séchage",
+                "stockage"
+            ]
+        },
+        {
+            "question": "Quelle différence existe-t-il entre un contrôle microbiologique programmé et un contrôle ponctuel d'un endoscope ?",
+            "reponse": "Le contrôle programmé est réalisé périodiquement pour surveiller le parc et les processus, tandis que le contrôle ponctuel répond à une situation particulière comme un achat, un prêt, un retour de maintenance, un résultat non satisfaisant ou une infection après endoscopie.",
+            "explication": "Il n'est pas nécessaire d'attendre le résultat d'un contrôle programmé avant la réutilisation. Pour un contrôle ponctuel, il est impératif d'attendre le résultat.",
+            "theme": "Contrôles microbiologiques",
+            "difficulte": "moyen",
+            "tags": [
+                "contrôle programmé",
+                "contrôle ponctuel",
+                "microbiologie"
+            ]
+        },
+        {
+            "question": "À quelle fréquence les contrôles microbiologiques programmés des endoscopes sont-ils réalisés ?",
+            "reponse": "Ils sont réalisés au moins une fois par an, deux fois par an au CHU, et chaque trimestre pour les écho-endoscopes et les duodénoscopes.",
+            "explication": "Ces contrôles servent à vérifier l'état du parc et à évaluer les processus de traitement et de stockage.",
+            "theme": "Surveillance microbiologique",
+            "difficulte": "difficile",
+            "tags": [
+                "fréquence",
+                "écho-endoscope",
+                "duodénoscope"
+            ]
+        },
+        {
+            "question": "Dans quelles conditions un prélèvement microbiologique d'endoscope doit-il être réalisé ?",
+            "reponse": "Il doit être effectué après un cycle complet de nettoyage et de désinfection et, si l'endoscope est stocké, au plus près de la date limite de stockage.",
+            "explication": "Le prélèvement est réalisé par deux personnes, idéalement dans une zone propre, suffisamment grande et sans circulation, avec port d'équipements de protection.",
+            "theme": "Prélèvement microbiologique",
+            "difficulte": "moyen",
+            "tags": [
+                "prélèvement",
+                "cycle complet",
+                "EPI"
+            ]
+        },
+        {
+            "question": "Comment les résultats des prélèvements microbiologiques des endoscopes sont-ils exprimés ?",
+            "reponse": "Les résultats quantitatifs sont exprimés en unités formant colonie pour 100 ml, tandis que les résultats qualitatifs indiquent la présence ou l'absence de micro-organismes indicateurs.",
+            "explication": "Le cours précise qu'au moins 80 % du volume injecté, avec un minimum de 100 ml, doit être recueilli.",
+            "theme": "Analyse microbiologique",
+            "difficulte": "difficile",
+            "tags": [
+                "UFC",
+                "micro-organisme indicateur",
+                "analyse"
+            ]
+        },
+        {
+            "question": "Quels sont les trois niveaux d'interprétation des contrôles microbiologiques des endoscopes ?",
+            "reponse": "Le niveau cible, le niveau d'alerte et le niveau d'action.",
+            "explication": "Le niveau cible correspond à la conformité. Le niveau d'alerte entraîne une vérification des conditions de fonctionnement et un nouveau contrôle. Le niveau d'action implique l'immobilisation de l'endoscope et un contrôle canal par canal.",
+            "theme": "Interprétation des contrôles",
+            "difficulte": "moyen",
+            "tags": [
+                "niveau cible",
+                "niveau d'alerte",
+                "niveau d'action"
+            ]
+        },
+        {
+            "question": "Combien de temps les résultats des contrôles microbiologiques doivent-ils être archivés ?",
+            "reponse": "Ils doivent être archivés pendant cinq ans.",
+            "explication": "Cet archivage contribue à la traçabilité et au suivi dans le temps de la qualité microbiologique du parc d'endoscopes.",
+            "theme": "Archivage et traçabilité",
+            "difficulte": "facile",
+            "tags": [
+                "archivage",
+                "cinq ans",
+                "traçabilité"
+            ]
+        },
+        {
+            "question": "Quelle surveillance bactériologique est réalisée sur les laveurs-désinfecteurs d'endoscopes ?",
+            "reponse": "Des prélèvements trimestriels sont réalisés sur l'eau de rinçage du laveur-désinfecteur, avec un prélèvement parallèle de l'eau du réseau qui l'alimente.",
+            "explication": "Dans l'eau bactériologiquement maîtrisée, la flore aérobie revivifiable à 22 °C est quantifiée et Pseudomonas aeruginosa est recherché.",
+            "theme": "Surveillance des LDE",
+            "difficulte": "difficile",
+            "tags": [
+                "LDE",
+                "eau",
+                "Pseudomonas aeruginosa"
+            ]
+        },
+        {
+            "question": "Quelle est la durée de validité d'un endoscope semi-critique conservé dans une armoire de stockage classique ?",
+            "reponse": "Sa validité est de 12 heures.",
+            "explication": "Au-delà de 12 heures, une désinfection de niveau intermédiaire ou de haut niveau est requise. Au-delà d'une semaine, un cycle complet de nettoyage et de désinfection est nécessaire.",
+            "theme": "Stockage des endoscopes",
+            "difficulte": "moyen",
+            "tags": [
+                "stockage classique",
+                "12 heures",
+                "endoscope semi-critique"
+            ]
+        },
+        {
+            "question": "Quelles règles s'appliquent au stockage d'un endoscope critique ?",
+            "reponse": "Une désinfection de haut niveau doit être réalisée systématiquement avant chaque utilisation.",
+            "explication": "Cette exigence est indiquée aussi bien pour le stockage classique que pour le stockage en enceinte dédiée.",
+            "theme": "Stockage des endoscopes",
+            "difficulte": "facile",
+            "tags": [
+                "endoscope critique",
+                "haut niveau",
+                "stockage"
+            ]
+        },
+        {
+            "question": "Qu'est-ce qu'une ESET et quelle surveillance lui est appliquée ?",
+            "reponse": "Une ESET est une enceinte de stockage des endoscopes souples thermosensibles. Elle fait l'objet d'une surveillance trimestrielle destinée à vérifier la qualité microbiologique de ses surfaces et à détecter un éventuel dysfonctionnement.",
+            "explication": "Lors de sa mise en service, un contrôle microbiologique de tous les endoscopes est réalisé. Les contrôles de routine comprennent également au moins un prélèvement annuel par endoscope.",
+            "theme": "Enceintes de stockage",
+            "difficulte": "moyen",
+            "tags": [
+                "ESET",
+                "stockage",
+                "surveillance"
+            ]
+        },
+        {
+            "question": "Quel est le principe du système de stockage plasma Typhoon ?",
+            "reponse": "Il sèche les canaux de l'endoscope avec de l'air filtré, injecte un produit désinfectant sous forme de plasma, puis conditionne l'endoscope dans un sachet fermé hermétiquement.",
+            "explication": "Ce système constitue une solution d'ensachage et peut être utilisé pour le stockage des endoscopes thermosensibles.",
+            "theme": "Systèmes de stockage",
+            "difficulte": "moyen",
+            "tags": [
+                "Typhoon",
+                "plasma",
+                "ensachage",
+                "séchage"
+            ]
+        }
+    ]
+}

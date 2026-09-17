@@ -4,9 +4,17 @@ Référence : `BESOIN.md`, §2.1 et §2.6.
 
 ## Chargement et catalogue
 
-**COU-01 — Accueil vide.** Au démarrage, tant qu'aucun cours n'est chargé,
+**COU-01 — Accueil.** Au démarrage HTTP, l'application tente de charger les cours
+embarqués déclarés dans `cours/index.json`. Tant qu'aucun cours n'est chargé,
 l'application propose « Choisir un répertoire » si disponible et « Importer des
-fichiers JSON ». Le lancement d'un quiz est impossible.
+fichiers JSON ». Le lancement d'un quiz est impossible sans cours sélectionné.
+
+**COU-01b — Cours embarqués.** Le manifeste statique `cours/index.json` liste les
+fichiers JSON versionnés à précharger depuis le dossier `cours/`. Chaque fichier
+référencé est lu en HTTP, validé selon le contrat de données, puis ajouté au
+catalogue avec son nom de fichier d'origine. Un manifeste absent produit simplement
+un catalogue embarqué vide. Une entrée invalide, dangereuse ou illisible est rejetée
+sans bloquer les autres cours ni l'import manuel.
 
 **COU-02 — Choix du répertoire.** Le répertoire appartient à l'utilisateur ; `/cours`
 n'est qu'un exemple, pas un chemin imposé. L'accès exige son intervention et les
@@ -71,11 +79,12 @@ indisponible, l'interface explique le repli et la compatibilité optimale avec l
 versions compatibles de Chrome/Edge. Aucune permission n'est demandée au démarrage
 sans action de l'utilisateur.
 
-**COU-13 — Durée de vie.** Aucun cours ni accès répertoire n'est restauré
-automatiquement après rechargement ou fermeture. L'utilisateur recharge sa source.
-Les fichiers déjà enregistrés sur disque restent présents. L'interface avertit que
-les cours uniquement en mémoire doivent être conservés manuellement avant de quitter.
-Les opérations de catalogue ne sont pas accessibles pendant un quiz.
+**COU-13 — Durée de vie.** Les cours embarqués sont relus depuis `cours/index.json`
+à chaque chargement HTTP de la page. Aucun accès répertoire, import manuel,
+sélection ni quiz en cours n'est restauré automatiquement après rechargement ou
+fermeture. Les fichiers déjà enregistrés sur disque restent présents. L'interface
+avertit que les cours uniquement en mémoire doivent être conservés manuellement
+avant de quitter. Les opérations de catalogue ne sont pas accessibles pendant un quiz.
 
 ## Critères d'acceptation
 
@@ -91,3 +100,5 @@ Les opérations de catalogue ne sont pas accessibles pendant un quiz.
 | AC-COU-08 | Deux fichiers différents avec le même nom de cours | Deux entrées distinguées par leur fichier |
 | AC-COU-09 | Rechargement de la page | Catalogue vide ; fichiers sur disque non supprimés |
 | AC-COU-10 | Actualisation après suppression d'un fichier | Cours retiré ; sélection réinitialisée et notification |
+| AC-COU-11 | Site servi en HTTP avec `cours/index.json` valide | Les cours embarqués apparaissent au démarrage sans import manuel |
+| AC-COU-12 | Manifeste absent ou entrée invalide | Le chargement des autres cours et l'import manuel restent utilisables |

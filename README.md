@@ -2,8 +2,9 @@
 
 Application statique de révision par quiz. Le contenu pédagogique (questions/réponses)
 est produit par une IA générative **externe**, à partir d'un prompt fourni par Memio.
-Memio ne réalise **aucun appel réseau** : ni vers un service d'IA, ni vers un serveur
-applicatif. Tout s'exécute dans le navigateur.
+Memio ne réalise **aucun appel réseau externe** : les seuls chargements automatiques
+servent les fichiers JSON publiés avec le site depuis le dossier `cours/`. Tout
+s'exécute dans le navigateur.
 
 Voir [`BESOIN.md`](BESOIN.md) pour l'expression de besoin et
 [`doc/specifications-fonct/`](doc/specifications-fonct/) pour les spécifications
@@ -13,16 +14,17 @@ fonctionnelles détaillées (règles, critères d'acceptation).
 
 Aucune installation n'est nécessaire pour **utiliser** Memio : c'est un site statique.
 
-- **Ouverture directe** : double-cliquez sur `index.html`, ou ouvrez-le depuis votre
-  navigateur (`file:///.../memio/index.html`). L'import et l'export manuels de fichiers
-  fonctionnent dans ce mode.
-- **Hébergement statique** (recommandé pour un usage prolongé) : servez le dossier
-  du projet via n'importe quel serveur HTTP statique, en HTTPS ou sur `localhost`.
-  Cela active en plus, si votre navigateur le permet, la sélection d'un répertoire de
+- **Hébergement statique HTTP** : servez le dossier du projet via n'importe quel
+  serveur HTTP statique, en HTTPS ou sur `localhost`. Les cours déclarés dans
+  `cours/index.json` apparaissent automatiquement dans le catalogue au démarrage.
+  Cela active aussi, si votre navigateur le permet, la sélection d'un répertoire de
   cours avec lecture/écriture directe sur disque.
+- **Ouverture directe** : l'ouverture en `file://` reste possible pour l'import et
+  l'export manuels, mais elle ne charge pas automatiquement le catalogue embarqué.
 
-Seuls les fichiers `index.html` et `assets/` sont nécessaires à l'utilisation ;
-`tests/`, `package.json` et les autres fichiers de développement ne sont pas requis.
+Les fichiers `index.html`, `assets/` et `cours/` sont nécessaires à l'utilisation
+avec catalogue préchargé ; `tests/`, `package.json` et les autres fichiers de
+développement ne sont pas requis.
 
 ### Compatibilité
 
@@ -32,7 +34,8 @@ cours (et l'écriture automatique des fichiers importés dans ce répertoire) ut
 **Chrome** et **Edge**. Si votre navigateur ne la propose pas, ou si vous ouvrez
 Memio directement en `file://`, l'application bascule automatiquement sur un mode
 **import / export manuel** (sélection de fichiers, téléchargement), toujours disponible,
-et vous en informe explicitement.
+et vous en informe explicitement. Le chargement automatique de `cours/index.json`
+nécessite en revanche un accès HTTP au site.
 
 Les préférences (nombre de questions par défaut, auto-évaluation) sont conservées dans
 le `localStorage` du navigateur, quand celui-ci est disponible. Aucun cours, aucune
@@ -51,22 +54,22 @@ Pour l'activer sur votre propre dépôt GitHub :
    workflow fourni s'en charge).
 3. Le site est ensuite disponible à `https://<utilisateur>.github.io/<depot>/`.
 
-Le workflow ne publie que `index.html`, `assets/` et `.nojekyll` : les dossiers de
-développement (`tests/`, `node_modules/`, etc.) et le dossier local `cours/` (contenu
-personnel de l'utilisateur, jamais versionné) ne sont pas déployés. L'hébergement en
-HTTPS active en plus, si le navigateur le permet, la sélection directe d'un répertoire
-de cours (*File System Access API*).
+Le workflow publie `index.html`, `assets/`, `cours/` et `.nojekyll` : les dossiers
+de développement (`tests/`, `node_modules/`, etc.) ne sont pas déployés. Les cours
+à précharger doivent être versionnés dans `cours/` et référencés dans
+`cours/index.json`. L'hébergement en HTTPS active en plus, si le navigateur le
+permet, la sélection directe d'un répertoire de cours (*File System Access API*).
 
 
 ## Utiliser Memio
 
-1. **Charger des cours** : importez un ou plusieurs fichiers `.json` (bouton
-   « Importer des fichiers JSON »), ou choisissez un répertoire contenant vos cours
-   si votre navigateur le permet.
+1. **Charger des cours** : sur HTTP, les cours déclarés dans `cours/index.json`
+  sont chargés automatiquement. Vous pouvez aussi importer un ou plusieurs fichiers
+  `.json`, ou choisir un répertoire contenant vos cours si votre navigateur le permet.
 2. **Générer un cours** (optionnel) : ouvrez « Voir / copier le prompt », copiez le
-   texte, complétez les emplacements `[COURS À RÉVISER]` et
-   `[NOMBRE DE QUESTIONS SOUHAITÉ]`, soumettez-le à l'IA générative de votre choix,
-   enregistrez sa réponse dans un fichier `.json`, puis importez-le dans Memio.
+  texte, joignez le cours source et précisez au besoin le volume de questions,
+  soumettez-le à l'IA générative de votre choix, enregistrez sa réponse dans un
+  fichier `.json`, puis importez-le dans Memio.
    Memio ne transmet jamais votre cours à un service tiers : cette étape se déroule
    entièrement en dehors de l'application.
 3. **Sélectionner** un ou plusieurs cours dans le catalogue, choisir le nombre de
@@ -102,15 +105,16 @@ npm run serve                 # sert le projet en local sur http://localhost:417
 | `index.html`, `assets/css/styles.css` | Structure et styles |
 | `assets/js/domain/` | Règles métier pures (contrat JSON, catalogue, préférences, moteur de quiz) |
 | `assets/js/services/` | Accès navigateur (fichiers, répertoire, `localStorage`) |
-| `assets/js/content/prompt.js` | Texte du prompt de génération, embarqué (aucune requête réseau) |
+| `assets/js/content/prompt.js` | Texte du prompt de génération, embarqué |
+| `cours/` | Cours JSON préchargés et manifeste `index.json` |
 | `assets/js/app.js` | Orchestration de l'interface |
 | `tests/unit/` | Tests `node:test` de la couche domaine/services |
 | `tests/e2e/` | Parcours Playwright (navigateur réel, `localhost` et `file://`) |
 | `tests/fixtures/` | Cours JSON utilisés par les tests |
 
-Les scripts `assets/js/*.js` sont des scripts classiques (pas de modules ES, pas de
-`fetch`), chargés dans l'ordre déclaré dans `index.html`, afin de fonctionner aussi
-bien en ouverture directe (`file://`) que sur un hébergement statique.
+Les scripts `assets/js/*.js` sont des scripts classiques (pas de modules ES), chargés
+dans l'ordre déclaré dans `index.html`. Le catalogue embarqué utilise `fetch` et
+nécessite donc un hébergement HTTP ; le mode `file://` conserve l'import manuel.
 
 ## Limites connues de cette version
 
