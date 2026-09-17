@@ -285,6 +285,7 @@ a:focus-visible,
 .carte-flip {
   perspective: 90rem;
   margin-bottom: 0.75rem;
+  height: 400px;
 }
 
 .carte-flip__interieur {
@@ -309,6 +310,7 @@ a:focus-visible,
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  height: 400px;
 }
 
 .carte-flip__face--verso {
