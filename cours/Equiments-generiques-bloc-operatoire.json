@@ -1,0 +1,918 @@
+{
+    "cours": "Les équipements génériques au bloc opératoire",
+    "description": "Cours consacré aux principaux équipements du bloc opératoire, à leurs principes de fonctionnement, à leurs usages, à leurs critères de choix ainsi qu’aux risques et mesures de sécurité associés.",
+    "questions": [
+        {
+            "question": "Comment le bloc opératoire est-il défini dans le cours ?",
+            "reponse": "Le bloc opératoire est une enceinte dédiée à des actes invasifs, quels que soient leur modalité et leur objectif. Il regroupe les équipements adaptés ainsi que les compétences médicales et paramédicales nécessaires pour assurer la sécurité des patients.",
+            "explication": "Le bloc opératoire est également un environnement protégé, à accès limité et soumis à une réglementation spécifique.",
+            "theme": "Introduction et contexte du bloc opératoire",
+            "difficulte": "facile",
+            "tags": [
+                "bloc opératoire",
+                "sécurité",
+                "actes invasifs"
+            ]
+        },
+        {
+            "question": "Pourquoi l’évolution technologique du bloc opératoire nécessite-t-elle d’anticiper de nouvelles compétences ?",
+            "reponse": "Les équipements évoluent de la mécanique vers l’électronique puis l’informatique, tandis que de nouvelles techniques chirurgicales et des systèmes intégrés apparaissent.",
+            "explication": "Le suivi des innovations implique aussi d’adapter les ressources humaines, les organisations, les infrastructures, les plateaux techniques et le modèle économique.",
+            "theme": "Évolution technologique",
+            "difficulte": "moyen",
+            "tags": [
+                "innovation",
+                "compétences",
+                "technologie"
+            ]
+        },
+        {
+            "question": "Quels sont les deux éléments principaux d’une table d’opération ?",
+            "reponse": "Une table d’opération comporte un socle et un plateau.",
+            "explication": "Elle peut être mécanique ou motorisée et doit supporter le patient tout en permettant les mouvements nécessaires aux explorations et aux interventions.",
+            "theme": "Table d’opération",
+            "difficulte": "facile",
+            "tags": [
+                "table d’opération",
+                "socle",
+                "plateau"
+            ]
+        },
+        {
+            "question": "Quels mouvements une table d’opération peut-elle réaliser ?",
+            "reponse": "Elle peut réaliser une inclinaison longitudinale en proclive ou déclive, une inclinaison transversale en roulis, ainsi qu’une élévation ou une descente du plateau. Le plateau peut aussi effectuer une translation et permettre les mouvements du billot, de la têtière et du dossier.",
+            "explication": "Ces mouvements servent à adapter la position du patient à la spécialité, à la voie d’abord et aux besoins des opérateurs.",
+            "theme": "Table d’opération",
+            "difficulte": "facile",
+            "tags": [
+                "positionnement",
+                "proclive",
+                "roulis"
+            ]
+        },
+        {
+            "question": "Quels critères doivent être étudiés lors du choix d’une table d’opération ?",
+            "reponse": "Il faut notamment considérer le positionnement chirurgical, la compatibilité avec l’imagerie peropératoire, l’accès de l’équipe autour de la table, le circuit du patient, l’architecture des locaux, les disciplines concernées, le volume d’activité et les habitudes de travail.",
+            "explication": "Le choix doit permettre un bon positionnement des opérateurs tout en maintenant la sécurité et le confort du patient.",
+            "theme": "Choix d’une table d’opération",
+            "difficulte": "moyen",
+            "tags": [
+                "table d’opération",
+                "architecture",
+                "imagerie"
+            ]
+        },
+        {
+            "question": "Quels sont les trois principaux concepts de tables d’opération présentés dans le cours ?",
+            "reponse": "La table conventionnelle à roulage non motorisé, la table conventionnelle à roulage motorisé et la table de transfert avec chariot motorisé ou non motorisé et pilier fixe ou déplaçable.",
+            "explication": "Les tables de transfert permettent notamment d’interchanger les plateaux et de transférer le patient sans emporter le pilier.",
+            "theme": "Types de tables d’opération",
+            "difficulte": "moyen",
+            "tags": [
+                "table conventionnelle",
+                "table de transfert",
+                "motorisation"
+            ]
+        },
+        {
+            "question": "Quels sont les principaux types de plateaux de table d’opération ?",
+            "reponse": "Les plateaux de chirurgie générale, les plateaux universels multisections, les plateaux de spécialités et les plateaux adaptés à la chirurgie de l’obésité.",
+            "explication": "Les plateaux universels permettent de nombreuses positions, tandis que les plateaux spécialisés répondent aux contraintes propres à certaines disciplines.",
+            "theme": "Plateaux de table d’opération",
+            "difficulte": "facile",
+            "tags": [
+                "plateau",
+                "chirurgie",
+                "position"
+            ]
+        },
+        {
+            "question": "Quels risques doivent être pris en compte lors de l’utilisation d’une table d’opération ?",
+            "reponse": "Il faut prendre en compte le poids du patient, la stabilité de la table, les précautions de transfert, les risques de compression et l’existence de commandes de secours.",
+            "explication": "Les accessoires ne supportent pas nécessairement le même poids que la table. Les consignes du fournisseur doivent donc être vérifiées.",
+            "theme": "Sécurité de la table d’opération",
+            "difficulte": "moyen",
+            "tags": [
+                "sécurité",
+                "poids",
+                "transfert"
+            ]
+        },
+        {
+            "question": "Quelle plage de longueurs d’onde correspond à la lumière visible selon le cours ?",
+            "reponse": "La lumière visible correspond aux ondes électromagnétiques comprises entre 380 nm, pour le violet, et 780 nm, pour le rouge.",
+            "explication": "La couleur perçue d’un objet correspond à la partie de la lumière qu’il réfléchit.",
+            "theme": "Éclairage opératoire",
+            "difficulte": "facile",
+            "tags": [
+                "lumière",
+                "longueur d’onde",
+                "spectre visible"
+            ]
+        },
+        {
+            "question": "Dans quelle unité l’intensité lumineuse est-elle exprimée et quelles sont les valeurs standards au bloc opératoire ?",
+            "reponse": "L’intensité lumineuse est exprimée en lux. Les standards indiqués pour le bloc opératoire se situent entre 40 000 et 160 000 lux.",
+            "explication": "Une intensité plus élevée n’est pas toujours préférable, car elle peut provoquer une fatigue oculaire, une perte de contraste ou un éblouissement.",
+            "theme": "Caractéristiques de l’éclairage opératoire",
+            "difficulte": "facile",
+            "tags": [
+                "lux",
+                "intensité lumineuse",
+                "éblouissement"
+            ]
+        },
+        {
+            "question": "Pourquoi recherche-t-on une bonne profondeur de champ pour un éclairage opératoire ?",
+            "reponse": "La profondeur de champ permet d’obtenir un cylindre de lumière homogène avec une intensité et une luminosité constantes de la surface jusqu’à la profondeur.",
+            "explication": "Cette homogénéité est importante pour éclairer correctement une cavité opératoire, malgré l’absorption de la lumière et la présence d’ombres.",
+            "theme": "Caractéristiques de l’éclairage opératoire",
+            "difficulte": "moyen",
+            "tags": [
+                "profondeur de champ",
+                "homogénéité",
+                "cavité"
+            ]
+        },
+        {
+            "question": "Qu’est-ce que la dilution des ombres dans un éclairage opératoire ?",
+            "reponse": "La dilution des ombres consiste à projeter des faisceaux lumineux provenant de différents angles selon leur position dans la coupole.",
+            "explication": "La multiplication des angles d’éclairage limite l’assombrissement du champ lorsqu’un opérateur ou un instrument intercepte une partie des faisceaux.",
+            "theme": "Caractéristiques de l’éclairage opératoire",
+            "difficulte": "moyen",
+            "tags": [
+                "ombres",
+                "faisceau lumineux",
+                "coupole"
+            ]
+        },
+        {
+            "question": "Qu’est-ce que l’indice de rendu des couleurs et quelle valeur minimale est imposée ?",
+            "reponse": "L’indice de rendu des couleurs mesure la capacité d’une source lumineuse à restituer les couleurs par comparaison avec une source idéale ou naturelle. La norme impose un IRC supérieur à 85.",
+            "explication": "La valeur maximale Ra égale à 100 correspond à une lumière blanche possédant un spectre complet et continu.",
+            "theme": "Caractéristiques de l’éclairage opératoire",
+            "difficulte": "moyen",
+            "tags": [
+                "IRC",
+                "couleurs",
+                "lumière blanche"
+            ]
+        },
+        {
+            "question": "Quelle limite est imposée à l’éclairement énergétique d’un éclairage opératoire ?",
+            "reponse": "L’éclairement énergétique doit être inférieur à 700 W/m².",
+            "explication": "L’éclairement énergétique de deux sources s’additionne, ce qui peut conduire à dépasser la valeur imposée lorsque plusieurs coupoles sont utilisées.",
+            "theme": "Sécurité de l’éclairage opératoire",
+            "difficulte": "moyen",
+            "tags": [
+                "chaleur",
+                "éclairement énergétique",
+                "norme"
+            ]
+        },
+        {
+            "question": "Quels avantages la technologie LED présente-t-elle par rapport à l’halogène ?",
+            "reponse": "La LED offre une durée de vie supérieure à 30 000 heures, un coût d’utilisation faible, une consommation énergétique réduite, moins de chaleur et un IRC supérieur à 90.",
+            "explication": "L’halogène a une durée de vie d’environ 1 000 heures et est en voie de disparition.",
+            "theme": "Technologies d’éclairage",
+            "difficulte": "facile",
+            "tags": [
+                "LED",
+                "halogène",
+                "durée de vie"
+            ]
+        },
+        {
+            "question": "Quel principe physique est utilisé par les générateurs d’électrochirurgie ?",
+            "reponse": "Les générateurs d’électrochirurgie transforment l’énergie électrique en énergie thermique en utilisant la loi de Joule.",
+            "explication": "La quantité de chaleur produite dans les tissus dépend de l’intensité du courant, de la résistance des tissus et du temps d’application selon la relation Q = I² × R × t.",
+            "theme": "Électrochirurgie",
+            "difficulte": "moyen",
+            "tags": [
+                "loi de Joule",
+                "énergie thermique",
+                "courant électrique"
+            ]
+        },
+        {
+            "question": "Pourquoi les générateurs d’électrochirurgie utilisent-ils des courants de fréquence supérieure à 300 kHz ?",
+            "reponse": "Au-delà de 300 kHz, les tissus deviennent insensibles à la stimulation neuromusculaire provoquée par le courant alternatif.",
+            "explication": "À cette fréquence, les cellules reçoivent trop de stimuli pour répondre, ce qui diminue notamment le risque de complications cardiaques.",
+            "theme": "Électrochirurgie",
+            "difficulte": "difficile",
+            "tags": [
+                "haute fréquence",
+                "stimulation neuromusculaire",
+                "sécurité"
+            ]
+        },
+        {
+            "question": "Pourquoi la surface de contact de l’électrode active est-elle déterminante en électrochirurgie ?",
+            "reponse": "La surface de contact détermine la densité du courant. Une petite surface produit une densité élevée et donc un effet thermique plus important.",
+            "explication": "La densité du courant correspond au rapport entre l’intensité du courant et la surface d’application.",
+            "theme": "Effets thermiques de l’électrochirurgie",
+            "difficulte": "moyen",
+            "tags": [
+                "densité de courant",
+                "électrode",
+                "effet thermique"
+            ]
+        },
+        {
+            "question": "Quels effets sont recherchés en électrochirurgie ?",
+            "reponse": "Les effets recherchés sont la coupe, la coagulation pour arrêter les saignements, la dévitalisation pour détruire les tissus et la soudure ou thermofusion.",
+            "explication": "Ces effets dépendent notamment de la température atteinte, de la puissance, du temps d’application et de la nature des tissus.",
+            "theme": "Effets de l’électrochirurgie",
+            "difficulte": "facile",
+            "tags": [
+                "coupe",
+                "coagulation",
+                "thermofusion"
+            ]
+        },
+        {
+            "question": "Quelle est la principale différence entre un circuit monopolaire et un circuit bipolaire ?",
+            "reponse": "Le circuit monopolaire utilise une électrode active et une électrode neutre. Dans le circuit bipolaire, les deux électrodes actives sont intégrées à l’instrument et aucune électrode neutre n’est nécessaire.",
+            "explication": "En bipolaire, le courant circule directement d’une pointe à l’autre de l’instrument, ce qui réduit son parcours dans le patient.",
+            "theme": "Modes d’électrochirurgie",
+            "difficulte": "facile",
+            "tags": [
+                "monopolaire",
+                "bipolaire",
+                "circuit électrique"
+            ]
+        },
+        {
+            "question": "À quoi correspondent les couleurs bleue et jaune pour l’activation en mode monopolaire ?",
+            "reponse": "Le bleu correspond à la coagulation et le jaune à la section ou à la coupe.",
+            "explication": "Ce code couleur permet de distinguer rapidement les principaux effets recherchés lors de l’activation du générateur.",
+            "theme": "Mode monopolaire",
+            "difficulte": "facile",
+            "tags": [
+                "code couleur",
+                "coagulation",
+                "coupe"
+            ]
+        },
+        {
+            "question": "Comment la coupe haute fréquence provoque-t-elle la section des tissus ?",
+            "reponse": "Un voltage supérieur à 190 Vp crée de petits arcs électriques qui chauffent très rapidement le liquide intracellulaire au-dessus de 100 °C. La vaporisation rompt les membranes cellulaires et la destruction des cellules produit la coupe.",
+            "explication": "La coupe repose donc sur un échauffement très rapide et localisé des tissus.",
+            "theme": "Coupe électrochirurgicale",
+            "difficulte": "difficile",
+            "tags": [
+                "coupe HF",
+                "vaporisation",
+                "voltage"
+            ]
+        },
+        {
+            "question": "Comment fonctionne la coagulation par contact ?",
+            "reponse": "Avec un voltage inférieur à 190 Vp, aucun arc électrique n’est créé. Le liquide intracellulaire chauffe progressivement et, entre 60 et 100 °C, les protéines tissulaires coagulent tandis que les cellules se rétrécissent et ferment les vaisseaux.",
+            "explication": "La coagulation par contact est aussi appelée dessiccation.",
+            "theme": "Coagulation électrochirurgicale",
+            "difficulte": "difficile",
+            "tags": [
+                "dessiccation",
+                "coagulation",
+                "hémostase"
+            ]
+        },
+        {
+            "question": "Quel est le principe de la thermofusion des vaisseaux ?",
+            "reponse": "La thermofusion associe une pression mécanique contrôlée sur les tissus et l’apport d’un courant haute fréquence afin de fusionner les parois du vaisseau.",
+            "explication": "Le système mesure l’impédance des tissus, adapte automatiquement l’énergie, détecte la fin du cycle et peut sceller des vaisseaux jusqu’à 7 mm.",
+            "theme": "Thermofusion",
+            "difficulte": "difficile",
+            "tags": [
+                "thermofusion",
+                "impédance",
+                "vaisseaux"
+            ]
+        },
+        {
+            "question": "Quel est le rôle de l’électrode neutre en mode monopolaire ?",
+            "reponse": "L’électrode neutre ferme le circuit et récupère le courant sur une surface aussi large que possible afin de réduire la densité de courant et l’effet thermique.",
+            "explication": "La petite surface de l’électrode active chauffe, tandis que la grande surface de la plaque patient doit rester froide.",
+            "theme": "Sécurité en électrochirurgie",
+            "difficulte": "moyen",
+            "tags": [
+                "électrode neutre",
+                "plaque patient",
+                "brûlure"
+            ]
+        },
+        {
+            "question": "Quelle différence existe-t-il entre une plaque patient simple zone et une plaque double zone ?",
+            "reponse": "La plaque simple zone détecte uniquement sa connexion au générateur. La plaque double zone vérifie également le contact avec la peau par une mesure de résistance et contrôle la densité de courant.",
+            "explication": "La plaque double zone permet une surveillance plus complète de la qualité d’application de l’électrode neutre.",
+            "theme": "Électrode neutre",
+            "difficulte": "moyen",
+            "tags": [
+                "plaque double zone",
+                "résistance",
+                "sécurité"
+            ]
+        },
+        {
+            "question": "Quelles règles principales doivent être respectées pour positionner une plaque patient ?",
+            "reponse": "Elle doit être placée aussi près que possible du site opératoire tout en conservant une distance minimale de 15 cm. Elle ne doit pas être placée près de la tête, sur des os ou articulations, sur une peau irritée ou blessée, ni dans une zone de collecte de fluides.",
+            "explication": "Le trajet du courant doit aussi éviter les implants conducteurs et les stimulateurs cardiaques.",
+            "theme": "Positionnement de l’électrode neutre",
+            "difficulte": "moyen",
+            "tags": [
+                "plaque patient",
+                "positionnement",
+                "courant"
+            ]
+        },
+        {
+            "question": "Quelles précautions sont recommandées pour un patient porteur d’un stimulateur cardiaque ?",
+            "reponse": "Il faut suivre les instructions d’utilisation, consulter un cardiologue et, en cas de doute, le fabricant du stimulateur. Le mode bipolaire doit être privilégié.",
+            "explication": "Si le mode monopolaire est nécessaire, le trajet du courant doit éviter le stimulateur et ses électrodes, avec une puissance et un voltage bas et sans mode spray à voltage élevé.",
+            "theme": "Sécurité en électrochirurgie",
+            "difficulte": "difficile",
+            "tags": [
+                "pacemaker",
+                "mode bipolaire",
+                "risque électrique"
+            ]
+        },
+        {
+            "question": "Pourquoi les antiseptiques alcooliques représentent-ils un risque en électrochirurgie ?",
+            "reponse": "Les antiseptiques alcooliques peuvent s’enflammer et la flamme est parfois à peine visible, notamment sous l’éclairage opératoire.",
+            "explication": "Les instruments actifs non utilisés doivent être placés dans un plateau ou un étui adapté et non sur le patient ou les champs stériles.",
+            "theme": "Risque de feu",
+            "difficulte": "facile",
+            "tags": [
+                "antiseptique alcoolique",
+                "incendie",
+                "électrochirurgie"
+            ]
+        },
+        {
+            "question": "Quelle forme d’énergie est utilisée par un bistouri à ultrasons ?",
+            "reponse": "Le bistouri à ultrasons utilise une énergie mécanique sous forme de vibrations longitudinales à haute fréquence.",
+            "explication": "Le générateur alimente des céramiques piézoélectriques qui transforment le signal électrique en vibrations mécaniques transmises à l’instrument.",
+            "theme": "Bistouri à ultrasons",
+            "difficulte": "moyen",
+            "tags": [
+                "ultrasons",
+                "énergie mécanique",
+                "piézoélectricité"
+            ]
+        },
+        {
+            "question": "Quels sont les trois principaux effets d’un bistouri à ultrasons sur les tissus ?",
+            "reponse": "Les effets sont la cavitation, la coagulation entre 60 et 100 °C et la section pouvant atteindre 200 °C.",
+            "explication": "La cavitation forme puis fait imploser des bulles dans les liquides tissulaires, ce qui produit une onde de choc et fragmente les tissus.",
+            "theme": "Bistouri à ultrasons",
+            "difficulte": "moyen",
+            "tags": [
+                "cavitation",
+                "coagulation",
+                "section"
+            ]
+        },
+        {
+            "question": "Quel est le principe de la thermocoagulation par radiofréquence ?",
+            "reponse": "Une électrode est placée au centre de la lésion sous contrôle échographique ou scanner. Des ondes électromagnétiques de 460 à 470 kHz produisent une chaleur localisée entre 45 et 100 °C.",
+            "explication": "Cette chaleur provoque une altération cellulaire et le volume coagulé est ensuite résorbé par l’organisme en quelques semaines.",
+            "theme": "Générateurs de radiofréquence",
+            "difficulte": "moyen",
+            "tags": [
+                "radiofréquence",
+                "thermocoagulation",
+                "lésion"
+            ]
+        },
+        {
+            "question": "Quel est l’intérêt de la dissection à jet d’eau ?",
+            "reponse": "Elle permet une dissection sélective des tissus en ménageant les vaisseaux, les nerfs et les organes.",
+            "explication": "Le jet d’eau libère les vaisseaux, qui peuvent ensuite être coagulés de manière ciblée par électrochirurgie.",
+            "theme": "Hydrochirurgie",
+            "difficulte": "facile",
+            "tags": [
+                "jet d’eau",
+                "dissection",
+                "vaisseaux"
+            ]
+        },
+        {
+            "question": "Quelles applications des générateurs de froid sont présentées dans le cours ?",
+            "reponse": "Les applications citées sont la cryobiopsie, l’extraction de corps étrangers, la cryocanalisation et la cryodévitalisation.",
+            "explication": "Le principe consiste à détruire ou à prélever des tissus en les exposant à un froid extrême au moyen d’une cryosonde.",
+            "theme": "Cryochirurgie",
+            "difficulte": "facile",
+            "tags": [
+                "cryobiopsie",
+                "cryosonde",
+                "froid"
+            ]
+        },
+        {
+            "question": "Quel est le principe général de la vidéochirurgie ?",
+            "reponse": "La vidéochirurgie consiste à introduire une source de lumière, une caméra et des instruments par de petites ouvertures, tandis que le chirurgien opère en regardant un écran.",
+            "explication": "Elle peut réduire la douleur, permettre un lever précoce, raccourcir l’hospitalisation et favoriser une récupération plus rapide.",
+            "theme": "Vidéochirurgie",
+            "difficulte": "facile",
+            "tags": [
+                "vidéochirurgie",
+                "caméra",
+                "chirurgie mini-invasive"
+            ]
+        },
+        {
+            "question": "Quels sont les principaux composants d’une colonne de vidéochirurgie ?",
+            "reponse": "Une colonne vidéo comprend notamment un chariot, un processeur et une tête de caméra, un écran, une source de lumière, un insufflateur pour la cœlioscopie, un enregistreur et éventuellement un irrigateur.",
+            "explication": "Ces équipements permettent l’acquisition, le traitement, l’affichage et éventuellement l’enregistrement des images opératoires.",
+            "theme": "Colonne de vidéochirurgie",
+            "difficulte": "facile",
+            "tags": [
+                "colonne vidéo",
+                "processeur",
+                "écran"
+            ]
+        },
+        {
+            "question": "Quel est le rôle d’un capteur CCD dans une caméra de vidéochirurgie ?",
+            "reponse": "Le capteur CCD transforme les photons en électrons puis en un signal vidéo numérique.",
+            "explication": "Il est constitué de cellules photosensibles appelées photosites. La résolution dépend du nombre de pixels produits.",
+            "theme": "Caméra de vidéochirurgie",
+            "difficulte": "moyen",
+            "tags": [
+                "CCD",
+                "pixel",
+                "signal vidéo"
+            ]
+        },
+        {
+            "question": "Pourquoi la caméra et l’écran doivent-ils avoir la même résolution ?",
+            "reponse": "Si leurs résolutions sont différentes, l’image affichée adopte la résolution la plus faible des deux équipements.",
+            "explication": "Une caméra de haute résolution ne peut donc pas restituer tous ses détails sur un écran de résolution inférieure.",
+            "theme": "Chaîne vidéo",
+            "difficulte": "facile",
+            "tags": [
+                "résolution",
+                "caméra",
+                "écran"
+            ]
+        },
+        {
+            "question": "À quoi sert la balance des blancs d’une caméra chirurgicale ?",
+            "reponse": "La balance des blancs calibre les capteurs de la caméra en fonction de la source lumineuse.",
+            "explication": "Elle doit être réalisée avant l’utilisation à partir d’une surface complètement blanche afin d’obtenir une restitution correcte des couleurs.",
+            "theme": "Caméra de vidéochirurgie",
+            "difficulte": "facile",
+            "tags": [
+                "balance des blancs",
+                "calibrage",
+                "couleurs"
+            ]
+        },
+        {
+            "question": "Quels sont les deux dispositifs intégrés dans un endoscope rigide ?",
+            "reponse": "Il comprend un dispositif de transmission de l’image vers la caméra, constitué d’une succession de lentilles, et un dispositif de transmission de la lumière utilisant des fibres optiques.",
+            "explication": "Ses caractéristiques comprennent notamment le diamètre, la longueur, l’angle de visée et l’angle de champ.",
+            "theme": "Endoscope rigide",
+            "difficulte": "moyen",
+            "tags": [
+                "endoscope",
+                "lentilles",
+                "fibres optiques"
+            ]
+        },
+        {
+            "question": "Pourquoi le CO2 est-il utilisé pour créer le pneumopéritoine ?",
+            "reponse": "Le CO2 est très diffusible et ne présente pas de risque d’explosion.",
+            "explication": "L’oxygène est explosif, tandis que l’azote est peu diffusible dans les tissus et peut provoquer une embolie gazeuse en cas d’injection.",
+            "theme": "Insufflation en cœlioscopie",
+            "difficulte": "moyen",
+            "tags": [
+                "CO2",
+                "pneumopéritoine",
+                "insufflateur"
+            ]
+        },
+        {
+            "question": "Quelles surveillances sont nécessaires pendant une insufflation de CO2 ?",
+            "reponse": "Il faut surveiller la capnie en raison du risque d’hypercapnie et monitorer la température corporelle en raison du risque d’hypothermie, notamment lorsque le débit est élevé.",
+            "explication": "Le CO2 peut être absorbé par voie vasculaire à travers le péritoine et le gaz insufflé peut contribuer au refroidissement du patient.",
+            "theme": "Sécurité de l’insufflation",
+            "difficulte": "moyen",
+            "tags": [
+                "capnie",
+                "hypercapnie",
+                "hypothermie"
+            ]
+        },
+        {
+            "question": "Quelle différence principale existe-t-il entre un fibroscope et un vidéo-endoscope souple ?",
+            "reponse": "Le fibroscope transporte l’image par un faisceau ordonné de fibres optiques et permet une vision directe. Le vidéo-endoscope possède un capteur CCD distal et affiche une image numérique sur un écran.",
+            "explication": "Le vidéo-endoscope offre une meilleure qualité d’image et davantage de confort, mais nécessite un vidéoprocesseur et un investissement plus important.",
+            "theme": "Endoscopie souple",
+            "difficulte": "moyen",
+            "tags": [
+                "fibroscope",
+                "vidéo-endoscope",
+                "CCD"
+            ]
+        },
+        {
+            "question": "Pourquoi un endoscope souple ne passe-t-il pas à l’autoclave ?",
+            "reponse": "L’endoscope souple ne passe pas à l’autoclave parce qu’il est thermosensible.",
+            "explication": "Sa désinfection fait donc l’objet d’une procédure précise, d’une traçabilité et de précautions particulières.",
+            "theme": "Désinfection des endoscopes",
+            "difficulte": "facile",
+            "tags": [
+                "thermosensible",
+                "désinfection",
+                "endoscope"
+            ]
+        },
+        {
+            "question": "Quel est le but du prétraitement d’un endoscope effectué immédiatement après l’examen ?",
+            "reponse": "Il vise à éviter le séchage des souillures, éliminer les souillures visibles, faciliter le nettoyage et prévenir la formation d’un biofilm.",
+            "explication": "Ce prétraitement comprend l’essuyage externe, l’irrigation de tous les canaux et l’élimination de l’eau résiduelle avec une seringue d’air.",
+            "theme": "Désinfection des endoscopes",
+            "difficulte": "moyen",
+            "tags": [
+                "prétraitement",
+                "biofilm",
+                "nettoyage"
+            ]
+        },
+        {
+            "question": "Quelles sont les principales étapes du traitement d’un endoscope souple après le prétraitement ?",
+            "reponse": "Les étapes comprennent le test d’étanchéité, un premier nettoyage d’au moins 10 minutes, un premier rinçage, un second nettoyage d’au moins 5 minutes, un rinçage intermédiaire, la désinfection à l’acide peracétique, le rinçage terminal, le séchage à l’air médical et le stockage.",
+            "explication": "L’immersion, l’écouvillonnage et l’irrigation des canaux sont essentiels pour traiter toutes les parties internes et externes.",
+            "theme": "Désinfection des endoscopes",
+            "difficulte": "difficile",
+            "tags": [
+                "acide peracétique",
+                "étanchéité",
+                "traçabilité"
+            ]
+        },
+        {
+            "question": "Quels éléments doivent être tracés après le traitement d’un endoscope ?",
+            "reponse": "La traçabilité doit inclure l’identité du patient, l’acte réalisé, le numéro de l’endoscope et la procédure de traitement.",
+            "explication": "Cette traçabilité permet d’associer chaque examen au dispositif utilisé et à son traitement.",
+            "theme": "Traçabilité en endoscopie",
+            "difficulte": "facile",
+            "tags": [
+                "traçabilité",
+                "patient",
+                "endoscope"
+            ]
+        },
+        {
+            "question": "Quelles sont les trois parties principales d’un système d’aspiration chirurgicale ?",
+            "reponse": "Il comprend une pompe aspirante, une tubulure stérile à usage unique et un récipient jetable destiné à recueillir les substances aspirées.",
+            "explication": "À l’hôpital, la pompe peut être remplacée par un raccordement au réseau central de vide médical.",
+            "theme": "Aspiration chirurgicale",
+            "difficulte": "facile",
+            "tags": [
+                "aspiration",
+                "pompe",
+                "tubulure"
+            ]
+        },
+        {
+            "question": "Quels sont les principaux types de pompes électriques d’aspiration présentés dans le cours ?",
+            "reponse": "Le cours présente les aspirateurs de mucosités, les aspirateurs chirurgicaux, les pompes d’irrigation-aspiration, les aspirateurs de fumées et les systèmes combinant l’aspiration des liquides et des fumées.",
+            "explication": "Chaque système répond à des besoins différents en matière de débit, de dépression, de collecte ou de filtration.",
+            "theme": "Aspiration chirurgicale",
+            "difficulte": "moyen",
+            "tags": [
+                "pompe électrique",
+                "mucosités",
+                "fumées"
+            ]
+        },
+        {
+            "question": "Pourquoi les fumées chirurgicales doivent-elles être aspirées ?",
+            "reponse": "Elles peuvent contenir des polluants chimiques, des virus, des prions, des bactéries et des fragments cellulaires. Elles provoquent aussi des irritations, des céphalées, des nausées et une gêne visuelle.",
+            "explication": "Le cours indique également que des effets à long terme ne peuvent pas être exclus en raison du caractère cancérigène de certains composants.",
+            "theme": "Aspiration des fumées",
+            "difficulte": "moyen",
+            "tags": [
+                "fumées chirurgicales",
+                "polluants",
+                "filtration"
+            ]
+        },
+        {
+            "question": "Quel est le principe de fonctionnement du garrot pneumatique ?",
+            "reponse": "Le brassard comprime la peau, les muscles, la graisse, les vaisseaux et les nerfs. Lorsque la pression atteint les parois des vaisseaux, le flux sanguin est temporairement interrompu.",
+            "explication": "Le garrot est utilisé pour faciliter des interventions sur les extrémités des membres supérieurs ou inférieurs.",
+            "theme": "Garrot chirurgical",
+            "difficulte": "facile",
+            "tags": [
+                "garrot pneumatique",
+                "brassard",
+                "circulation sanguine"
+            ]
+        },
+        {
+            "question": "Quelles sont les trois étapes principales de mise en œuvre d’un garrot chirurgical ?",
+            "reponse": "Les étapes sont la pose du brassard, l’exsanguination du membre puis le gonflage du brassard.",
+            "explication": "Le brassard est placé aussi proximalement que possible après préparation cutanée et pose d’un jersey protecteur.",
+            "theme": "Mise en œuvre du garrot",
+            "difficulte": "facile",
+            "tags": [
+                "garrot",
+                "exsanguination",
+                "gonflage"
+            ]
+        },
+        {
+            "question": "Quels risques sont associés à une pression de garrot insuffisante ou excessive ?",
+            "reponse": "Une pression insuffisante bloque mal la circulation artérielle et peut créer un garrot veineux. Une pression excessive peut provoquer des douleurs et endommager les tissus cutanés, mous, vasculaires ou nerveux, jusqu’à la paralysie.",
+            "explication": "La pression doit être adaptée à la pression artérielle, à la circonférence du membre, au type de brassard et aux caractéristiques du patient.",
+            "theme": "Sécurité du garrot",
+            "difficulte": "moyen",
+            "tags": [
+                "pression",
+                "lésion nerveuse",
+                "garrot veineux"
+            ]
+        },
+        {
+            "question": "Que représentent la LOP et la RTP dans l’utilisation d’un garrot ?",
+            "reponse": "La LOP est la pression minimale d’occlusion suffisante pour stopper le flux artériel du membre. La RTP est la pression réglée sur le garrot pour maintenir l’occlusion en tenant compte des fluctuations pendant l’intervention.",
+            "explication": "La RTP est déterminée par le chirurgien et l’anesthésiste selon plusieurs critères propres au patient et au brassard.",
+            "theme": "Réglage du garrot",
+            "difficulte": "difficile",
+            "tags": [
+                "LOP",
+                "RTP",
+                "pression d’occlusion"
+            ]
+        },
+        {
+            "question": "Quelle durée de garrottage est-il recommandé de ne pas dépasser ?",
+            "reponse": "Il est recommandé de ne pas dépasser deux heures de garrottage.",
+            "explication": "Au-delà de cette durée, les risques de douleur, de nécrose tissulaire et éventuellement de paralysie sont majorés. Une minuterie avec alarme doit être utilisée.",
+            "theme": "Sécurité du garrot",
+            "difficulte": "facile",
+            "tags": [
+                "durée",
+                "nécrose",
+                "minuterie"
+            ]
+        },
+        {
+            "question": "Quelles sont les trois fonctions principales d’un système de navigation chirurgicale ?",
+            "reponse": "Il permet de cartographier l’anatomie, de préparer la trajectoire opératoire et de guider le chirurgien en temps réel.",
+            "explication": "La navigation utilise notamment des images préopératoires pour améliorer le repérage, la précision et le guidage du geste.",
+            "theme": "Navigation chirurgicale",
+            "difficulte": "facile",
+            "tags": [
+                "cartographie",
+                "pré-planning",
+                "guidage"
+            ]
+        },
+        {
+            "question": "Comment fonctionne un système de navigation optique passif ?",
+            "reponse": "Une caméra infrarouge émet des signaux qui sont réfléchis par des marqueurs placés sur les instruments. La caméra analyse les vues stéréoscopiques et détermine leur position par triangulation.",
+            "explication": "Les marqueurs passifs évitent les connexions électriques et les fils reliés aux instruments.",
+            "theme": "Navigation optique",
+            "difficulte": "difficile",
+            "tags": [
+                "infrarouge",
+                "triangulation",
+                "marqueurs passifs"
+            ]
+        },
+        {
+            "question": "Comment fonctionne le repérage électromagnétique en navigation chirurgicale ?",
+            "reponse": "Un émetteur génère un champ électromagnétique autour du patient. Des capteurs miniatures placés sur les instruments détectent ce champ et fournissent leur position en continu.",
+            "explication": "Des capteurs patients peuvent être placés sur la peau ou de manière percutanée.",
+            "theme": "Navigation électromagnétique",
+            "difficulte": "moyen",
+            "tags": [
+                "champ électromagnétique",
+                "capteur",
+                "localisation"
+            ]
+        },
+        {
+            "question": "Quelles sont les cinq étapes d’une navigation chirurgicale ?",
+            "reponse": "Les étapes sont l’acquisition des images préopératoires, le pré-planning, l’installation de la navigation, la synchronisation du patient avec l’imagerie appelée registration, puis le repérage et l’affichage en temps réel des instruments et des mouvements du patient.",
+            "explication": "La registration met en correspondance l’anatomie réelle du patient avec les données d’imagerie utilisées par le système.",
+            "theme": "Procédure de navigation",
+            "difficulte": "difficile",
+            "tags": [
+                "registration",
+                "imagerie",
+                "navigation"
+            ]
+        },
+        {
+            "question": "Qu’est-ce que le brainshift en neurochirurgie ?",
+            "reponse": "Le brainshift est le déplacement du cerveau provoqué notamment par la perte de liquide céphalorachidien, l’élasticité des tissus, les variations de pression intracrânienne et les déformations liées au geste opératoire.",
+            "explication": "Ce déplacement réduit la précision de la navigation fondée sur les images préopératoires. Une imagerie peropératoire peut permettre un recalage partiel.",
+            "theme": "Neuro-navigation",
+            "difficulte": "difficile",
+            "tags": [
+                "brainshift",
+                "neurochirurgie",
+                "recalage"
+            ]
+        },
+        {
+            "question": "Quels sont les quatre types de systèmes robotiques distingués dans le cours ?",
+            "reponse": "Les systèmes passifs, semi-actifs, actifs et télémanipulateurs ou télé-opérateurs.",
+            "explication": "Ils se différencient par leur niveau de participation au geste, depuis l’aide à la perception jusqu’à l’exécution de tâches programmées ou à la manipulation à distance.",
+            "theme": "Robotique chirurgicale",
+            "difficulte": "facile",
+            "tags": [
+                "robotique",
+                "système actif",
+                "télémanipulateur"
+            ]
+        },
+        {
+            "question": "Quelle différence existe-t-il entre un système robotique semi-actif et un système actif ?",
+            "reponse": "Un système semi-actif guide ou positionne automatiquement un outil, mais le chirurgien réalise manuellement la tâche. Un système actif exécute une tâche spécifique et programmée sous la supervision du chirurgien.",
+            "explication": "Le degré d’autonomie du système est donc plus élevé dans le cas d’un système actif.",
+            "theme": "Robotique chirurgicale",
+            "difficulte": "moyen",
+            "tags": [
+                "semi-actif",
+                "actif",
+                "autonomie"
+            ]
+        },
+        {
+            "question": "Quels avantages techniques offrent les télémanipulateurs chirurgicaux ?",
+            "reponse": "Ils offrent une démultiplication des mouvements, une suppression des tremblements, une vision en trois dimensions, un grossissement pouvant atteindre dix fois et des instruments disposant d’une grande amplitude de mouvement.",
+            "explication": "Une démultiplication de 5:1 signifie par exemple qu’un mouvement de 5 cm du chirurgien produit un mouvement de 1 cm dans le patient.",
+            "theme": "Télémanipulateurs",
+            "difficulte": "moyen",
+            "tags": [
+                "démultiplication",
+                "vision 3D",
+                "tremblements"
+            ]
+        },
+        {
+            "question": "Quelles contraintes organisationnelles sont associées à l’utilisation d’un télémanipulateur ?",
+            "reponse": "Il faut prendre en compte le temps d’installation, la durée plus longue des procédures, le positionnement des bras, la morphologie du patient, le montage, la calibration, le nettoyage et la disponibilité du matériel nécessaire en cas de conversion.",
+            "explication": "La formation de l’ensemble des professionnels est nécessaire pour la mise en œuvre et l’assistance peropératoire.",
+            "theme": "Organisation de la chirurgie robotique",
+            "difficulte": "moyen",
+            "tags": [
+                "formation",
+                "installation",
+                "conversion"
+            ]
+        },
+        {
+            "question": "Que signifie l’acronyme LASER ?",
+            "reponse": "LASER signifie Light Amplification by Stimulated Emission of Radiation, soit amplification de la lumière par émission stimulée de rayonnement.",
+            "explication": "Le principe repose sur la production de photons identiques par émission stimulée.",
+            "theme": "Laser",
+            "difficulte": "facile",
+            "tags": [
+                "LASER",
+                "acronyme",
+                "émission stimulée"
+            ]
+        },
+        {
+            "question": "Qu’est-ce que l’émission stimulée dans le fonctionnement d’un laser ?",
+            "reponse": "Un atome excité recevant un photon de l’énergie appropriée émet un second photon ayant les mêmes propriétés que le photon incident.",
+            "explication": "Les photons produits ont la même longueur d’onde et la même direction. La répétition du phénomène crée une lumière intense, directionnelle et de couleur définie.",
+            "theme": "Principe physique du laser",
+            "difficulte": "difficile",
+            "tags": [
+                "photon",
+                "émission stimulée",
+                "atome"
+            ]
+        },
+        {
+            "question": "Quelles sont les quatre grandes familles de lasers ?",
+            "reponse": "Les lasers solides, les lasers à gaz, les lasers liquides et les lasers à semi-conducteurs ou diodes.",
+            "explication": "Le milieu actif donne son nom au laser et détermine la longueur d’onde des photons émis.",
+            "theme": "Types de lasers",
+            "difficulte": "facile",
+            "tags": [
+                "laser solide",
+                "laser à gaz",
+                "diode"
+            ]
+        },
+        {
+            "question": "Quels sont les quatre effets du laser sur les tissus biologiques ?",
+            "reponse": "Les effets sont photothermique, photoplasmolytique, photochimique et photoablatif.",
+            "explication": "L’effet photothermique convertit la lumière en chaleur, l’effet photoplasmolytique produit une onde de choc, l’effet photochimique utilise un photosensibilisant et l’effet photoablatif rompt les liaisons moléculaires sans échauffement.",
+            "theme": "Effets biologiques du laser",
+            "difficulte": "difficile",
+            "tags": [
+                "photothermique",
+                "photochimique",
+                "photoablation"
+            ]
+        },
+        {
+            "question": "Comment le temps d’impulsion influence-t-il la puissance d’un laser ?",
+            "reponse": "Pour une énergie constante, plus le temps d’impulsion est court, plus la puissance délivrée est importante.",
+            "explication": "La puissance correspond au rapport entre l’énergie délivrée et la durée d’impulsion ou d’émission.",
+            "theme": "Paramètres du laser",
+            "difficulte": "moyen",
+            "tags": [
+                "puissance",
+                "énergie",
+                "impulsion"
+            ]
+        },
+        {
+            "question": "Comment la fréquence d’impulsion influence-t-elle l’effet thermique d’un laser pulsé ?",
+            "reponse": "Lorsque la fréquence augmente, le délai entre deux impulsions diminue. Le tissu dispose de moins de temps pour se relaxer et l’effet thermique augmente.",
+            "explication": "La fréquence d’impulsion correspond au nombre d’impulsions émises par seconde et s’exprime en hertz.",
+            "theme": "Paramètres du laser",
+            "difficulte": "difficile",
+            "tags": [
+                "fréquence",
+                "relaxation tissulaire",
+                "effet thermique"
+            ]
+        },
+        {
+            "question": "Quelles mesures permettent de prévenir les risques liés au laser ?",
+            "reponse": "Il faut prévoir une signalétique, une salle adaptée avec fenêtres opaques, éviter les surfaces réfléchissantes, aspirer les fumées, assurer la ventilation, porter des lunettes filtrantes adaptées, utiliser des instruments spécifiques, contrôler le matériel et former le personnel.",
+            "explication": "Les protections doivent être adaptées à la longueur d’onde utilisée, car les risques oculaires et tissulaires varient selon le rayonnement.",
+            "theme": "Sécurité laser",
+            "difficulte": "moyen",
+            "tags": [
+                "lunettes filtrantes",
+                "fumées",
+                "prévention"
+            ]
+        },
+        {
+            "question": "Quelles sont les trois parties principales d’un microscope opératoire ?",
+            "reponse": "Un microscope opératoire comprend un bloc optique, un statif support et un dispositif d’éclairage.",
+            "explication": "Le statif peut être mobile ou suspendu au plafond, tandis que l’éclairage peut être intégré au bloc optique ou déporté.",
+            "theme": "Microscope opératoire",
+            "difficulte": "facile",
+            "tags": [
+                "microscope",
+                "statif",
+                "éclairage"
+            ]
+        },
+        {
+            "question": "Quel est le trajet de la lumière dans un microscope opératoire ?",
+            "reponse": "La lumière provient du boîtier de lampe, est transmise au microscope, est déviée vers l’objet observé, revient vers le microscope puis traverse des lentilles qui appliquent un grossissement avant d’atteindre les yeux du chirurgien.",
+            "explication": "En ophtalmologie, la lumière peut être déviée selon un angle précis pour obtenir une rétro-illumination et observer l’intérieur de l’œil.",
+            "theme": "Fonctionnement du microscope",
+            "difficulte": "moyen",
+            "tags": [
+                "lumière",
+                "lentilles",
+                "grossissement"
+            ]
+        },
+        {
+            "question": "Quelles différences principales existent entre les sources halogène, LED et xénon d’un microscope ?",
+            "reponse": "L’halogène produit une lumière jaunâtre, de faible intensité, avec une durée de vie courte et un faible coût. La LED a une longue durée de vie, une lumière naturelle et une intensité supérieure. Le xénon produit une lumière naturelle et intense, mais sa durée de vie est limitée à environ 500 heures.",
+            "explication": "Le choix de la source influence la qualité de l’éclairage, le coût d’utilisation et les contraintes de maintenance.",
+            "theme": "Éclairage du microscope",
+            "difficulte": "moyen",
+            "tags": [
+                "halogène",
+                "LED",
+                "xénon"
+            ]
+        },
+        {
+            "question": "Pourquoi un microscope de neurochirurgie ou d’ORL ne peut-il pas être utilisé en ophtalmologie ?",
+            "reponse": "La lumière n’est pas adaptée à la rétine et les commandes ne répondent pas aux mêmes contraintes, notamment l’utilisation d’une pédale en ophtalmologie plutôt que de poignées.",
+            "explication": "En ophtalmologie, le patient est allongé sur le dos et le microscope doit être positionné perpendiculairement à sa tête.",
+            "theme": "Spécificités des microscopes",
+            "difficulte": "moyen",
+            "tags": [
+                "ophtalmologie",
+                "rétine",
+                "microscope"
+            ]
+        },
+        {
+            "question": "Quelles vérifications et précautions sont nécessaires lors de la mise en œuvre d’un microscope opératoire ?",
+            "reponse": "Il faut tester la lampe, les freins et la mobilité, installer la housse stérile, positionner le microscope, vérifier les filtres spécifiques, régler l’écart interpupillaire et la correction de vue, puis surveiller les câbles.",
+            "explication": "Le microscope est lourd, encombrant et doit être mobilisé avec précaution sans rouler sur les câbles.",
+            "theme": "Mise en œuvre du microscope",
+            "difficulte": "moyen",
+            "tags": [
+                "contrôle",
+                "housse stérile",
+                "mobilisation"
+            ]
+        }
+    ]
+}
